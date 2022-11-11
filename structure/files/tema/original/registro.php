@@ -931,7 +931,36 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="<?php echo url ?>/registro">Registre-se</a>
                         </li>
-                        
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-plus"></i> Comunidade
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipes</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/vips">Usuários VIPs</a>
+                                <div class="dropdown-divider"></div>
+                                
+                                <a class="dropdown-item" href="<?php echo url ?>/discord">Discord</a>
+                             
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i></i> Jornalismo
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <?php
+                                $sql4 = "SELECT * FROM cms_news order by id DESC LIMIT 1";
+                                $query2 = mysqli_query($conn, $sql4) or die(mysqli_error($conn));
+                                while ($row4 = $query2->fetch_assoc()) { ?>
+                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">Notícias Publicadas</a>
+
+                            <?php } ?>
+
+                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Promoções ativas</a>
+                              
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -999,7 +1028,17 @@
         </div>
     </div>
 </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     <div style="font-weight: 14px;background: #1e262c; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
         <div class="container">
 

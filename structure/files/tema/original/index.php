@@ -955,8 +955,7 @@
                                 <i class="fas fa-plus"></i> Comunidade
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipe</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/teams">Colaboradores</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipes</a>
                                 <a class="dropdown-item" href="<?php echo url ?>/vips">Usuários VIPs</a>
                                 <div class="dropdown-divider"></div>
                                 
@@ -1092,6 +1091,12 @@
 
         </div>
     </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
     <div style="font-weight: 14px;background: #1e262c; color: #fff; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
     <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 10px">
