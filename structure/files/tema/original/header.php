@@ -64,11 +64,11 @@
     <link href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/animate.css">
-    <link href="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/all.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo url ?>/structure/files/tema/original/css_files/all.css?298932832" rel="stylesheet" type="text/css">
     <style type="text/css">
         :root {
-            --main-light-color: #212529;
-            --main-dark-color: #363a3e;
+            --main-light-color: #DE2732;
+            --main-dark-color: #B40101;
         }
         
         #master-topbg {
@@ -78,8 +78,8 @@
         
         #master-logo {
             height: 80px;
-            width: 240px;
-            background: url(<?php echo logo ?>) right center no-repeat;
+            width: 100%;
+            background: url(<?php echo logo ?>) left center no-repeat;
         }
         
         #master-logo:hover {
@@ -88,11 +88,11 @@
         
         #master-indexbigbg {
             color: #fff;
-            background: url(https://i.imgur.com/n5bwuVO.png) no-repeat center;
+            background: url(https://i.imgur.com/7tbGJqK.png) no-repeat center;
         }
         
         #me-top-profile {
-            background: url(https://habbo.com/habbo-imaging/avatarimage?figure=<?php echo $roupa ?>&size=b&direction=2&head_direction=3&gesture=sml&action=wav&size=l) no-repeat center -20px, url(https://i.imgur.com/fvbkYwr.png) right bottom;
+            background: url(https://habbo.com/habbo-imaging/avatarimage?figure=<?php echo $roupa ?>&size=l&direction=3&head_direction=3&gesture=sml&action=wav&img_format=gif) no-repeat center -40px, url(https://i.imgur.com/7msIsK2.png) right bottom;
             border: none;
             padding: 0px;
             border-top-left-radius: 4px;
@@ -186,6 +186,10 @@
             border-bottom-width: 5px;
             border-color: rgba(0, 0, 0, .1) !important;
         }
+
+        .btn-sm {
+            font-size: 12px;
+        }
         
         .btn-primary,
         .btn-primary:disabled {
@@ -242,7 +246,7 @@
         
         .feed-item-image {
             width: 50px;
-            height: 70px;
+            height: 60px;
             background-position: -9px -15px;
             margin-right: 5px;
             margin-top: -5px;
@@ -397,6 +401,7 @@
             font-family: verdana;
             font-size: 11px;
             padding: 10px 15px 0px 15px;
+            color: #000;
         }
         
         #article-footer {
@@ -417,11 +422,13 @@
         .article-author {
             float: left;
             margin-top: 10px;
+            margin-bottom: 10px;
+            width: calc(100% - 50px);
         }
         
         .article-author-image {
             width: 50px;
-            height: 60px;
+            height: 100%;
             background-position: -10px -10px;
             float: left;
         }
@@ -554,39 +561,143 @@
             animation-timing-function: ease-in-out;
         }
         
-        @-webkit-keyframes float-landing-2wj_IS {
-            0% {
-                -webkit-transform: translate3d(0, -2px, 0);
-                transform: translate3d(0, -2px, 0)
-            }
-            to {
-                -webkit-transform: translate3d(0, 2px, 0);
-                transform: translate3d(0, 2px, 0)
-            }
+        @-webkit-keyframes float-landing-2wj_IS{0%{-webkit-transform:translate3d(0,-2px,0);transform:translate3d(0,-2px,0)}to{-webkit-transform:translate3d(0,2px,0);transform:translate3d(0,2px,0)}}@keyframes float-landing-2wj_IS{0%{-webkit-transform:translate3d(0,-2px,0);transform:translate3d(0,-2px,0)}to{-webkit-transform:translate3d(0,2px,0);transform:translate3d(0,2px,0)}}
+
+        .profile-topbg {
+            padding: 0px;
+            padding-top: 10px;
+            height: 240px;
+            border-color: #dfdfdf;
+            background-repeat: no-repeat;
+            background-position: center;
         }
-        
-        @keyframes float-landing-2wj_IS {
-            0% {
-                -webkit-transform: translate3d(0, -2px, 0);
-                transform: translate3d(0, -2px, 0)
-            }
-            to {
-                -webkit-transform: translate3d(0, 2px, 0);
-                transform: translate3d(0, 2px, 0)
-            }
+
+        .profile-change-background {
+            position: absolute;
+            background: rgba(0, 0, 0, .5);
+            color: #fff;
+            opacity: 0.7;
+            padding: 10px 9px 8px 10px;
+            border-radius: 4px;
+            bottom: 10px;
+            left: 10px;
+            transition: all .2s ease-out;
+            cursor: pointer;
         }
-        
+
+        .profile-topbg:hover .profile-change-background {
+            opacity: 1;
+        }
+
+        .profile-change-background i {
+            font-size: 20px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 15px auto;
+        }
+
+        .profile-nav.active {
+            font-weight: bold;
+            background: rgba(0,0,0,.05);
+        }
+
+        .profile-nav {
+            cursor: pointer;
+            transition: all .2s ease-out;
+        }
+
+        .profile-nav:hover {
+            background: rgba(0,0,0,.05);
+        }
+
+        .feed-code-block {
+            background-color: rgba(0,0,0,.05);
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: rgb(145, 145, 145);
+        }
+
+        .profile-name {
+            border-radius: 4px;
+            font-weight: bold;
+            line-height: 34px;
+            font-size: 18px;
+            background: rgba(0,0,0,.5);
+            padding: 5px 10px;
+            color: #fff;
+        }
+
+        .profile-top-badges {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+        }
+
+        .profile-top-badge {
+            border-radius: 4px;
+            background: rgba(0,0,0,.5);
+            width: 50px;
+            height: 50px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        .profile-motto {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            font-weight: bold;
+            line-height: 34px;
+            background: rgba(0,0,0,.5);
+            font-size: 10px;
+            padding: 5px 10px;
+            color: #fff;
+        }
+
+        .profile-stats-box {
+            position: absolute;
+            right: 0;
+            color: #fff;
+            background: rgba(0,0,0,.5);
+            padding: 5px 10px;
+            border-bottom-left-radius: 4px;
+            border-top-right-radius: 3px;
+            height: 40px;
+        }
+
+        .profile-stats-box .amount {
+            line-height: 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .profile-stats-box .desc {
+            font-size: 11px;
+        }
+
+        .move-handle {
+            font-size: 20px;
+            color: #7d7d7d;
+            cursor: ns-resize;
+        }
+
         .feed-poll-option {
             margin-bottom: 10px;
         }
-        
+
         .feed-poll {
             padding: 10px 0 10px;
             max-height: 222px;
             overflow: hidden;
             border-top: 1px solid rgba(0, 0, 0, .1);
         }
-        
+
         .feed-poll-option-radio {
             background: rgba(0, 0, 0, .03);
             border-radius: 4px;
@@ -597,31 +708,31 @@
             font-weight: bold;
             transition: all .2s ease-out;
         }
-        
-        .feed-poll-option-radio:hover,
-        .feed-poll-option-radio.selected {
+
+        .feed-poll-option-radio:hover, .feed-poll-option-radio.selected {
             background: rgba(0, 123, 255, .1);
         }
-        
+
+
         .feed-poll .progress {
             width: calc(100% - 50px);
             height: 30px;
             margin-bottom: 10px;
             background: transparent;
         }
-        
+
         .feed-poll .progress-bar {
             text-align: left;
             background: rgba(0, 0, 0, .05);
             color: #212529;
             font-weight: bold;
         }
-        
+
         .feed-poll .progress-bar div {
             text-align: left;
             padding-left: 10px;
         }
-        
+
         .feed-poll .option-percentage {
             float: left;
             width: 50px;
@@ -630,7 +741,7 @@
             text-align: center;
             font-weight: bold;
         }
-        
+
         .cookies-warning {
             position: fixed;
             bottom: 0;
@@ -643,6 +754,40 @@
             display: none;
             z-index: 99999999;
             cursor: pointer;
+        }
+
+        .feed-vip-icon {
+            width: 47px;
+            height: 14px;
+            background: url(https://i.imgur.com/LiNRMQ8.png) center no-repeat;
+            position: absolute;
+            margin-top: 40px;
+        }
+
+        .feed-discord-check {
+            color: #673ab7;
+        }
+
+        .alert {
+            overflow: auto;
+        }
+
+        .alert-success {
+            color: #ffffff;
+            background-color: #4CAF50;
+            border-color: #3b7b3e;
+        }
+
+        .alert-warning {
+            color: #ffffff;
+            background-color: #FFC107;
+            border-color: #ca9907;
+        }
+
+        .alert-discord {
+            color: #ffffff;
+            background-color: #7289da;
+            border-color: #5c6b9e;
         }
     </style>
     <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/angular.min.js" type="text/javascript"></script>
@@ -861,26 +1006,29 @@
                                 <a class="dropdown-item" href="<?php echo url ?>/vip">Conheça o VIP</a>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo url ?>/download/Habbface - App.exe" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                            
+                        </li>
 
                        
                         
                         <li class="nav-item ml-auto">
-                            <ul class="navbar-nav w-100">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://discord.gg/4ra8n2A3dV">
+                                    <i class="fab fa-discord" style="font-size: 20px"></i>
+                                </a>
+                            </li>
                                 <li class="nav-item" style="margin-right: 20px" data-toggle="modal" data-target="#notificationsModal" ng-click="loadNotifications()">
                                     <a class="nav-link" href="javascript:void(0)" ng-style="{&#39;color&#39; : +newNotificationsCount &gt; 0 ? &#39;#fff&#39; : &#39;&#39;}">
                                         <span style="font-weight: bold; opacity: 0;" ng-style="{&#39;opacity&#39;: newNotificationsCount &gt; 0 ? &#39;1&#39; : &#39;0&#39;}" class="ng-binding">0</span> <i ng-class="{&#39;far&#39; : newNotificationsCount == 0, &#39;fas floatingEffect&#39; : newNotificationsCount &gt; 0}" class="fa-bell far"></i>
                                     </a>
                                 </li>
-                                 <li class="nav-item">
-                            <a class="nav-link" href="<?php echo url ?>/download/Habbface - App.exe" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-download"></i> Download APP
-                            </a>
-                            
-                        </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo url ?>/client" target="_blank"><i class="far fa-building"></i> Entrar no Hotel</a>
                                 </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>

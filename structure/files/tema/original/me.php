@@ -22,9 +22,9 @@ include 'header.php' ?>
 
                         </div>
                     </div>
-                    <div onclick="window.open(&#39;/client&#39;, &#39;_blank&#39;);" class="panel-footer client-btn">Entrar no
-                        <?php echo nome ?>
+                    <div onclick="window.open(&#39;/client&#39;, &#39;_blank&#39;);" class="panel-footer client-btn">Jogar com Flash
                     </div>
+                    <div onclick="window.open(&#39;/react&#39;, &#39;_blank&#39;);" class="panel-footer client-btn" style="width:100%">Jogar com Nitro <img src="https://i.imgur.com/lZWES30.png"></div>
 
 
                 </div>
@@ -54,6 +54,7 @@ include 'header.php' ?>
                                             <textarea required="" class="form-control ng-pristine ng-untouched ng-valid ng-empty" style="margin-bottom: 10px" name="postagem" rows="1" placeholder="No que você está pensando?"></textarea>
 
                                         </div>
+                                        
 
                                         <button name="postar" type="submit" class="btn btn-primary" style="float: right">
 
@@ -78,7 +79,7 @@ include 'header.php' ?>
 
                                 <li class="list-group-item feed-item animated fadeInDown ng-scope" ng-repeat="post in posts| orderBy:'-id' track by $index" style="">
                                     <div id="postIdPanel430745">
-                                        <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $row77['look'] ?>&size=m&headonly=0&head_direction=2&gesture=sml)"></div>
+                                        <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $row77['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                         <div class="feed-item-body">
                                             <div class="feed-item-timestamp ng-binding">
                                                 <?php echo date('d/m/Y', $row['data']) . ' às ' . date('H:i:s', $row['data']) ?> <a href="javascript:void(0);" ng-click="deletePost(post)" ng-show="post.userid == 7702964" title="Apagar Publicação" style="color: #f44336" class="ng-hide"><i class="fas fa-times-circle"></i></a></div>
@@ -97,9 +98,11 @@ include 'header.php' ?>
 
                                     </div>
                                     <div class="feed-item-content">
+                                        
                                         <div class="more-less" onmouseover="resize(this)" id="contentId430745">
                                             <div class="more-block ng-binding" ng-bind-html="post.content | trustAsHtml">
                                                 <p>
+                                                
 
 <?php echo fs($row['postagem']) ?>
 </p>
@@ -248,7 +251,32 @@ include 'header.php' ?>
                     </div>
                 </div>
             </div>
+            
             <div class="col-md-6" style="max-width: 300px;">
+            <div class="card" style="margin-bottom: 10px">
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" placeholder="Pesquisar Usuário" class="form-control" id="user-search">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-primary btn-sm" style="border-top-right-radius:4px; border-bottom-right-radius:4px" onclick="searchUser()"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <script>
+                            function searchUser() {
+                                if($("#user-search").val() != "") {
+                                    location.href = "/perfil?=" + $("#user-search").val();
+                                }
+                            }
+
+                            $("#user-search").keypress(function( event ) {
+                                if (event.which == 13) {
+                                    searchUser();
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+
                 <div class="list-group" style="margin-bottom: 20px">
                     <div class="list-group-item" style="padding: 0;overflow: hidden">
                         <div id="articlesSlide" class="carousel slide" data-ride="carousel">
@@ -329,22 +357,6 @@ include 'header.php' ?>
 </div>
 
 <br>
-               
-         
-               <div class="panel panel-success">
-    <div class="list-group-item list-header">Pesquisar por usuário</div>
-          <div class="list-group-item config-controller open" data-target="#config">
-            <form method="post"> 
- <input placeholder="Digite o nome de usuário..." class="form-control" type="text" name="usuariobus">
-
-
-            <?php SalsaConta::buscar_usuario($conn) ?>
-           <br>
-            <button style="float: right;" type="submit" name="pesq" class="btn btn-dark">Procurar</button> 
-           <br>
-           <br>
-        </div>
-    </div>
 
 <br>
 
