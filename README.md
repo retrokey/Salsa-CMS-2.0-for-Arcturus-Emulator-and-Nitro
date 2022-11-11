@@ -1,7 +1,7 @@
-# Salsa CMS | Salsa CMS for Arcturus Emulator Habbo
+# Salsa CMS 2.0 | Salsa CMS for Arcturus Emulator Habbo compatible with Nitro
 <br>
 <center>
-    <img alt="Salsa CMS for Arcturus Emulator Habbo" title="Salsa CMS for Arcturus Emulator Habbo" src="https://habbofont.net/font/habbo_clicker/salsa%20cms.gif">
+    <img alt="Salsa CMS 2.0 for Arcturus Emulator Habbo & Nitro" title="Salsa CMS for Arcturus Emulator Habbo & Nitro" src="https://habbofont.net/font/habbo_clicker/salsa%20cms.gif">
 </center>
 <hr>
 
@@ -31,6 +31,9 @@ Salsa CMS é uma simples CMS especialmente para o Arcturus e Arcturus Morningsta
 
 
 <br>
-<h5>© 2020 Salsa CMS
+<h5>© 2022 Salsa CMS 2.0
+<br>
+
+<p>Special thanks to: Victorbls (Creator of SalsaCMS)
 
 
