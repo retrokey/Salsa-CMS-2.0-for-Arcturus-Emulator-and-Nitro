@@ -5,10 +5,17 @@ include 'header.php';
 
     <div class="container">
     <div class="row justify-content-md-center">
+        <div class="col-md-3">
+            <div class="list-group">
+                <div class="list-group-item list-header">Equipes</div>
+                <a class="list-group-item" href="/staff" style="color: #212529; cursor: pointer;">Staff</a>
+                <a class="list-group-item" href="/teams" style="color: #212529; cursor: pointer;  font-weight: bold">Colaboradores</a>
+            </div>
+         </div>
         <div class="col-md-9">
                        <div style="overflow: auto;">
                     <div style="width: 40px; height: 40px; float: left; margin-right: 10px">
-                        <img src="https://cdn.irinc.online/static_binc/c_images/album1584/EMB.gif" style="float:left">
+                        <img src="https://images.habbo.com/c_images/album1584/AMB.png" style="float:left">
                     </div>
                     <div style="width: calc(100% - 50px); float: right">
                         <h5 id="Embaixadores" style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Embaixadores</h5>
@@ -60,7 +67,7 @@ include 'header.php';
                             </div>
             <hr>         <div style="overflow: auto;">
                     <div style="width: 40px; height: 40px; float: left; margin-right: 10px">
-                        <img src="https://cdn.irinc.online/static_binc/c_images/album1584/GUA.gif" style="float:left">
+                        <img src="https://www.habborator.org/badges/badges/BOT.gif" style="float:left">
                     </div>
                     <div style="width: calc(100% - 50px); float: right">
                         <h5 id="Guardiões" style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Guardiões</h5>

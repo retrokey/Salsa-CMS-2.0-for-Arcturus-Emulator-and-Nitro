@@ -205,6 +205,20 @@
             border-color: rgba(0, 0, 0, .2) !important;
         }
         
+        .btn-friend-request,
+        .btn-friend-request:disabled {
+            background-color: #DB9103;
+        }
+        
+        .btn-friend-request:hover,
+        .btn-friend-request:active,
+        .btn-friend-request.active,
+        .btn-friend-request:focus,
+        .btn-friend-request:not(:disabled):not(.disabled):active:focus {
+            background-color: #BF8007 !important;
+            border-color: rgba(0, 0, 0, .2) !important;
+        }
+
         .alert-me {
             background-color: #1f272d;
             color: #ffffff;
@@ -953,8 +967,7 @@
                                 <i class="fas fa-plus"></i> Comunidade
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipe</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/teams">Colaboradores</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipes</a>
                                 <a class="dropdown-item" href="<?php echo url ?>/vips">Usuários VIPs</a>
                                 <div class="dropdown-divider"></div>
                                 
@@ -1007,8 +1020,9 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo url ?>/download/Habbface - App.exe" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="<?php echo urlapp ?>" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-download"></i> Download
+                                <img src="https://i.imgur.com/lZWES30.png">
                             </a>
                             
                         </li>

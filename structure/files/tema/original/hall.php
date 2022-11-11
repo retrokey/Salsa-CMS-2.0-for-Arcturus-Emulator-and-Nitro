@@ -7,8 +7,30 @@ include 'header.php';
     <div class="row">
         <div class="col-md-4">
             <div class="list-group">
-                <div style="background-image: url(https://3.bp.blogspot.com/-jUTMo3eQ7Ns/Wz5igBPWxxI/AAAAAAABIZ8/ePcIvMGhjjUbXXS4DYZpR-yI0EYO4jVNQCKgBGAs/s1600/lpromo_gen_baw_1.png);" class="list-group-item list-header">Promoções</div>
+
+                <div class="list-group-item list-header">Promoções</div>
                 
+                <div class="list-group-item podium" style="background: url(https://i.imgur.com/rQR45xY.png) -420px -70px;">
+                <?php
+                                $sql3 = "SELECT * FROM users ORDER BY pontos_promocao DESC LIMIT 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-1" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)">
+                                        </div><?php } ?>
+                                        <?php
+                                $sql3 = "SELECT * FROM users ORDER BY pontos_promocao DESC LIMIT 1, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-2" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                        <?php
+                                        $sql3 = "SELECT * FROM users ORDER BY pontos_promocao DESC LIMIT 2, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-3" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                    </div>
         
  <?php
                                 $sql3 = "SELECT * FROM users order by pontos_promocao DESC LIMIT 6";
@@ -48,8 +70,28 @@ include 'header.php';
         </div>
         <div class="col-md-4">
             <div class="list-group">
-                <div style="background-image: url(https://4.bp.blogspot.com/-S6kEQPEHu6k/Wmj9n71TswI/AAAAAAABEkU/27h_5KXBmRkhzfio_Gd3NJcAW2XxasUJQCKgBGAs/s1600/promo_no_goldrush.png);" class="list-group-item list-header">Eventos</div>
-              
+                <div class="list-group-item list-header">Eventos</div>
+                <div class="list-group-item podium" style="background: url(https://i.imgur.com/Fk1LArz.png) right top;">
+                <?php
+                                $sql3 = "SELECT * FROM users ORDER BY pontos_evento DESC LIMIT 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-1" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)">
+                                        </div><?php } ?>
+                                        <?php
+                                $sql3 = "SELECT * FROM users ORDER BY pontos_evento DESC LIMIT 1, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-2" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                        <?php
+                                        $sql3 = "SELECT * FROM users ORDER BY pontos_evento DESC LIMIT 2, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-3" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                    </div>
               <?php
                                 $sql3 = "SELECT * FROM users order by pontos_evento DESC LIMIT 6";
     $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
@@ -87,7 +129,28 @@ include 'header.php';
         </div>
         <div class="col-md-4">
             <div class="list-group">
-                <div style="background-image: url(https://4.bp.blogspot.com/-Rv7axvp5BQo/VdNcz5CCzGI/AAAAAAAAVQ4/6LT1RfB1DZ8/s1600/lpromo_generic_android.png);" class="list-group-item list-header">Créditos</div>
+                <div class="list-group-item list-header">Créditos</div>
+                <div class="list-group-item podium" style="background: url(https://i.imgur.com/4r7hVFB.png) right center;">
+                <?php
+                                $sql3 = "SELECT * FROM users ORDER BY credits DESC LIMIT 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-1" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)">
+                                        </div><?php } ?>
+                                        <?php
+                                $sql3 = "SELECT * FROM users ORDER BY credits DESC LIMIT 1, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-2" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                        <?php
+                                        $sql3 = "SELECT * FROM users ORDER BY credits DESC LIMIT 2, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-3" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                    </div>
                 
                                     <?php
                                 $sql3 = "SELECT * FROM users order by credits DESC LIMIT 6";
@@ -125,8 +188,28 @@ include 'header.php';
     
         <div class="col-md-4"><br>
             <div class="list-group">
-                <div style="background-image: url(https://2.bp.blogspot.com/-R6cz67_kMUA/VvDawXZCHWI/AAAAAAAAlzw/Aqgvb2JywjIdt6qOAe_wfQ0H1ERjdgGAw/s1600/habboios.png);" class="list-group-item list-header">Referidos</div>
-                
+                <div class="list-group-item list-header">Referidos</div>
+                <div class="list-group-item podium" style="background: url(https://2.bp.blogspot.com/-R6cz67_kMUA/VvDawXZCHWI/AAAAAAAAlzw/Aqgvb2JywjIdt6qOAe_wfQ0H1ERjdgGAw/s1600/habboios.png) right top;">
+                <?php
+                                $sql3 = "SELECT * FROM users ORDER BY referidos DESC LIMIT 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-1" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)">
+                                        </div><?php } ?>
+                                        <?php
+                                $sql3 = "SELECT * FROM users ORDER BY referidos DESC LIMIT 1, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-2" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                        <?php
+                                        $sql3 = "SELECT * FROM users ORDER BY referidos DESC LIMIT 2, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-3" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                    </div>
         
  <?php
                                 $sql3 = "SELECT * FROM users order by referidos DESC LIMIT 6";
@@ -172,8 +255,28 @@ include 'header.php';
 
        <div class="col-md-4"><br>
             <div class="list-group">
-                <div style="background-image: url(https://images.habbo.com/web_images/habbo-web-articles/lpromo_gen15_41.png);" class="list-group-item list-header">Duckets</div>
-                
+                <div style="background-image: url();" class="list-group-item list-header">Duckets</div>
+                <div class="list-group-item podium" style="background: url(https://i0.wp.com/dehabbo.com/wp-content/uploads/2021/06/duckets-habbo.jpg?fit=640%2C320&ssl=1) center;">
+                <?php
+                                $sql3 = "SELECT * FROM users ORDER BY pixels DESC LIMIT 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-1" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)">
+                                        </div><?php } ?>
+                                        <?php
+                                $sql3 = "SELECT * FROM users ORDER BY pixels DESC LIMIT 1, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-2" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                        <?php
+                                        $sql3 = "SELECT * FROM users ORDER BY pixels DESC LIMIT 2, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-3" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                    </div>
         
  <?php
                                 $sql3 = "SELECT * FROM users order by pixels DESC LIMIT 6";
@@ -229,8 +332,28 @@ include 'header.php';
 
 <div class="col-md-4"><br>
             <div class="list-group">
-                <div style="background-image: url(https://images.habbo.com/web_images/habbo-web-articles/lpromo_feb20_gen.png);" class="list-group-item list-header">Placar de conquistas</div>
-                
+                <div class="list-group-item list-header">Placar de conquistas</div>
+                <div class="list-group-item podium" style="background: url(https://habbofever.be/wp-content/uploads/2017/05/lpromo_gen15_12.png) right;">
+                <?php
+                                $sql3 = "SELECT * FROM users_settings ORDER BY achievement_score DESC LIMIT 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-1" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)">
+                                        </div><?php } ?>
+                                        <?php
+                                $sql3 = "SELECT * FROM users_settings ORDER BY achievement_score DESC LIMIT 1, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-2" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                        <?php
+                                        $sql3 = "SELECT * FROM users_settings ORDER BY achievement_score DESC LIMIT 2, 1";
+    $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
+    while ($row2 = $query1->fetch_assoc()) {
+        ?>
+                                        <div class="podium-3" style="background-image: url(<?php echo avatarimage ?><?php echo $row2['look'] ?>&amp;size=l&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;action=wav)"></div><?php } ?>
+                                    </div>
         
  <?php
                                 $sql3 = "SELECT * FROM users_settings order by achievement_score DESC LIMIT 6";

@@ -55,7 +55,7 @@ while ($row2 = $query1->fetch_assoc()) {
             </div>
             <div class="col-md-8 ng-scope" ng-controller="articleController">
                 <div class="card" style="width: 560px; margin-bottom: 10px">
-                    <div id="articleTopImage" class="card-body" style="background-image: url(<?php echo $row3['image'] ?>);">
+                    <div id="articleTopImage" class="card-body" style="color: #fff; background-image: url(<?php echo $row3['image'] ?>);">
                         <img src="<?php echo $row2['image'] ?>" style="display: none" id="articleImageSrc" crossorigin="" onload="setTopImage()">
                         <?php echo $row3['title'] ?>
                     </div>
@@ -143,7 +143,7 @@ if ($cur != null || $sessao != null || usuario != null)
 
                 <div class="card" style="width: 560px;">
 
-                            <div style="background-image: url(<?php echo $row3['image'] ?>);" class="list-group-item list-header">Comentários
+                            <div class="list-group-item list-header">Comentários
                             <span data-toggle="modal" data-target="#exampleModal" style="float: right;" class="badge badge-light">Comentar</span>
                             </div>
                             <div class="card-body">

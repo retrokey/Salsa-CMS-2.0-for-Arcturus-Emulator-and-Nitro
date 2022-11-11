@@ -13,6 +13,7 @@ $config['404page'] = "404"; // Nome da página de erro
 $config['site.manutencao'] = 0; // Colocar ou remover manutenção do hotel
 $config['site.login'] = 1; // Desativar ou ativar o login no Hotel
 $config['site.avatar'] = "https://habbo.city/habbo-imaging/avatarimage?figure="; // URL do avatarimage da CMS
+$config['site.appdownload'] = "http://localhost";
 $config['site.red'] = "1";
 $config['site.rank.minimo'] = 3; // Rank mínimo que poderá entrar com o Hotel em manutenção
 $config['site.cmfclient'] = 0; // Função para camuflar IP e Porta na client
@@ -34,6 +35,8 @@ $config['registro.visual'] = "hr-115-45.hd-209-2.ch-255-76.lg-275-62.fa-1204.ca-
 $config['registro.quartoinicial'] = "1"; // Quarto inicial
 $config['registro.contasporip'] = 50; // Quantidade de contas por IP
 
+// Configurações da Nitro
+
 
 // Configurações da Client
 $config['connection.info.host'] = "localhost"; // IP da VPS ou Hamachi
@@ -53,7 +56,7 @@ $config['habbo.swf'] = "http://localhost/swf/gordon/PRODUCTION-201601012205-2266
 
 // Configurações do tema atual
 $config['tema.tema'] = "original";
-$config['tema.logo'] = "http://habbox.com/text/70/Habbo";
+$config['tema.logo'] = "https://habbofont.net/font/habbo_clicker/salsacms.gif";
 $config['tema.topheader'] = "https://i.imgur.com/kNOKNpG.png";
 $config['tema.urlemblemas'] = "http://images.habbo.com/c_images/album1584/"; // Pasta de emblemas do perfil
 $config['tema.postagens'] = 1; // Desativar ou ativar as postagens na página principal

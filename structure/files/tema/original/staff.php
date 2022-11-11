@@ -6,11 +6,18 @@ include 'header.php';
     <div class="container">
     <div class="row justify-content-md-center">
         
-        
+    <div class="col-md-3">
+            <div class="list-group">
+                <div class="list-group-item list-header">Equipes</div>
+                <a class="list-group-item" href="/staff" style="color: #212529; cursor: pointer; font-weight: bold">Staff</a>
+                <a class="list-group-item" href="/teams" style="color: #212529; cursor: pointer; ">Colaboradores</a>
+            </div>
+    </div>
+
         <div class="col-md-9">
                         <div style="overflow: auto;">
                 <div style="width: 40px; height: 40px; float: left; margin-right: 10px">
-                    <img src="https://cdn.irinc.online/static_binc/c_images/album1584/BCEO.gif" style="float:left">
+                    <img src="https://www.habborator.org/badges/badges/ADM.gif" style="float:left">
                 </div>
                 <div style="width: calc(100% - 50px); float: right">
                     <h5 id="CEO" style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">CEO</h5>
@@ -20,7 +27,7 @@ include 'header.php';
             <div class="row">
                                 
                                 <?php
-                                $sql3 = "SELECT * FROM users WHERE rank=13";
+                                $sql3 = "SELECT * FROM users WHERE rank=7";
     $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
@@ -62,7 +69,7 @@ include 'header.php';
                             </div>
             <hr>            <div style="overflow: auto;">
                 <div style="width: 40px; height: 40px; float: left; margin-right: 10px">
-                    <img src="https://cdn.irinc.online/static_binc/c_images/album1584/BGER.gif" style="float:left">
+                    <img src="https://www.habborator.org/badges/badges/ADM.gif" style="float:left">
                 </div>
                 <div style="width: calc(100% - 50px); float: right">
                     <h5 id="Gerência" style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Gerência</h5>
@@ -71,7 +78,7 @@ include 'header.php';
             </div>
             <div class="row">
                                 <?php
-                                $sql3 = "SELECT * FROM users WHERE rank=12";
+                                $sql3 = "SELECT * FROM users WHERE rank=6";
     $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
@@ -110,7 +117,7 @@ include 'header.php';
                             </div>
             <hr>            <div style="overflow: auto;">
                 <div style="width: 40px; height: 40px; float: left; margin-right: 10px">
-                    <img src="https://cdn.irinc.online/static_binc/c_images/album1584/BADM.gif" style="float:left">
+                    <img src="https://www.habborator.org/badges/badges/ADM.gif" style="float:left">
                 </div>
                 <div style="width: calc(100% - 50px); float: right">
                     <h5 id="Administração" style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Administração</h5>
@@ -120,7 +127,7 @@ include 'header.php';
             <div class="row">
                                 
                             <?php
-                                $sql3 = "SELECT * FROM users WHERE rank=11";
+                                $sql3 = "SELECT * FROM users WHERE rank=5";
     $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
@@ -162,7 +169,7 @@ include 'header.php';
                             </div>
             <hr>            <div style="overflow: auto;">
                 <div style="width: 40px; height: 40px; float: left; margin-right: 10px">
-                    <img src="https://cdn.irinc.online/static_binc/c_images/album1584/BMOD.gif" style="float:left">
+                    <img src="https://www.habborator.org/badges/badges/ADM.gif" style="float:left">
                 </div>
                 <div style="width: calc(100% - 50px); float: right">
                     <h5 id="Moderação" style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Moderação</h5>
@@ -173,7 +180,7 @@ include 'header.php';
                                
                                
                              <?php
-                                $sql3 = "SELECT * FROM users WHERE rank=9";
+                                $sql3 = "SELECT * FROM users WHERE rank=4";
     $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>

@@ -21,34 +21,37 @@ include 'header.php';
 
             <div class="col-md-8">
                 <div class="panel panel-primary">
-
-                    <div class="panel-heading" style="border-radius:5px;background-image: url(https://1.bp.blogspot.com/-TSg7lycMl9Q/WebEo6AfQjI/AAAAAAAA-pc/8hZWFHnZNEE-X6bNChnidhv4dpii3RFKgCKgBGAs/s1600/hipad_large_promo.png); background-position: center; padding-top: 20px; ">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="media">
-
-                                    <div class="media-left media-middle">
-                                        <div style="background-image: url(<?php echo avatarimage ?><?php echo $row3['look'] ?>&amp;size=m&amp;direction=2&amp;head_direction=2&amp;gesture=sml&amp;size=l); background-position:  -50px; width:60px; height:80px;">
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="media-body">
-                                        <h4 class="media-heading" style="color: #fff; font-weight: bold;">
-                                     <strong><?php echo $row3['username'] ?></strong>&nbsp;                                </h4>
-                                        <font color="white"><?php echo fs($row3['motto'])      ?>         </font>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="pull-right">
-
-                                </div>
-                            </div>
-                        </div>
+                <div class="container ng-scope" ng-controller="profileController">
+    <div class="row justify-content-md-center">
+    <div class="col-md-9">
+            <div class="list-group" style="margin-bottom: 20px;">
+                <div class="list-group-item profile-topbg" style="text-align: center; background-image: url(https://i.imgur.com/dICRz6E.png)">
+                    <span class="profile-name"><?php echo $row3['username'] ?></span>
+                    <div class="profile-picture shadow-lg" style="background: url(<?php echo avatarimage ?><?php echo $row3['look'] ?>&amp;size=l&amp;head_direction=2&amp;gesture=sml&amp;action=wav) 7px -10px, rgba(0,0,0,.5)"></div>
+                    <div class="profile-top-badges">
+                        <!-- ngRepeat: badge in favoriteBadges -->
                     </div>
+                </div>
+                <div class="list-group-item" style="padding: 5 1.25rem;">
+                    <ul class="nav" style="float: left">
+                        <li class="nav-item">
+                            <div style="font-weight: bold;">Missão:</div>
+                        </li>
+                        <li class="nav-item">
+                            <div style="margin-left: 3px;"><?php echo $row3['motto'] ?></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row profile-tab" id="badgesTab" style="display: none">
+                <!-- ngRepeat: badge in badges -->
+            </div>
+            
+        </div>
+    </div>
+    </div>
+                    
                 </div>
                 <style>
                     .more-less {
@@ -216,6 +219,18 @@ if ($cur != null || $sessao != null || usuario != null)
                             <div class="list-group-item list-header">Recados para
                                 <?php echo $row3['username'] ?>
                             </div>
+                            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary">
+                        Deixar um recado <span class="badge badge-light"><?php
+  $sql="SELECT * FROM salsa_postagens WHERE donoperfil='".$row3['username']."' order by id";
+  if ($result=mysqli_query($conn,$sql))
+  {
+  $rowcount=mysqli_num_rows($result);
+  printf("%d\n",$rowcount);
+  mysqli_free_result($result);
+  }
+  ?></span>
+                    </button>
+                            
                             <div class="card-body">
 
                                 <?php
@@ -252,7 +267,29 @@ while ($bss = $aa->fetch_assoc()) {
             </div>
 
             <div class="col-md-4">
-                <!-- a href="/client" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Entrar no Hotel</a  -->
+            
+                <a href="/client" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Entrar no Hotel</a>
+                
+                <?php
+                    if ($cur != null || $sessao != null || usuario != null)
+                        { ?>
+            
+
+                    <?php if (id != $row3['id'])
+                    {
+                        ?>
+                      <button type="button" data-toggle="modal" data-target="#Amizade" class="btn btn-friend-request">
+                        Enviar pedido de amizade para <?php echo $row3['username'] ?>
+                        </button> 
+                    <?php } ?>
+                    
+                <?php } else 
+                {
+                    echo 'Você precisa estar logado para deixar um recado para <b> ' . $row3['username'];
+                    echo '</b>';
+                } ?>
+                    <br>
+                    <br>
 
                 <div class="panel panel-primary">
                     <div class="panel-heading">
@@ -379,48 +416,6 @@ while ($bss = $aa->fetch_assoc()) {
                     </div>
                 </div>
 
-                <br>
-                <div class="panel-heading">
-                    <div class="list-group-item list-header">Ações</div>
-                </div>
-                <div class="list-group-item config-controller open" data-target="#config">
-<?php
-if ($cur != null || $sessao != null || usuario != null)
-{
-    
-    ?>
-                    <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary">
-                        Deixar um recado <span class="badge badge-light"><?php
-  $sql="SELECT * FROM salsa_postagens WHERE donoperfil='".$row3['username']."' order by id";
-  if ($result=mysqli_query($conn,$sql))
-  {
-  $rowcount=mysqli_num_rows($result);
-  printf("%d\n",$rowcount);
-  mysqli_free_result($result);
-  }
-  ?></span>
-                    </button>
-                    <br>
-
-                    <br>
-
-                    <?php if (id != $row3['id'])
-                    {
-                        ?>
-                      <button type="button" data-toggle="modal" data-target="#Amizade" class="btn btn-primary">
-                        Enviar pedido de amizade para <?php echo $row3['username'] ?>
-                        </button> 
-                    <?php } ?>
-                    
-                <?php } else 
-                {
-                    echo 'Você precisa estar logado para deixar um recado para <b> ' . $row3['username'];
-                    echo '</b>';
-                } ?>
-                    <br>
-                    <br>
-
-                </div>
                 <br>
                  <div class="panel panel-success">
     <div class="list-group-item list-header">Pesquisar por usuário</div>

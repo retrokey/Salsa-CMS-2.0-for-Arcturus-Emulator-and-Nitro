@@ -343,7 +343,7 @@ include 'header.php' ?>
 
                         <b><?php echo $MOEDAS['username'] ?></b>
                         <br>
-                        <span><img style="margin-top:-3px" src="https://habbok.me/template/habbinc/images/coins.gif">&nbsp;<?php echo $MOEDAS['credits'] ?></span>
+                        <span><img style="margin-top:-3px" src="https://i.imgur.com/1kwRA45.png">&nbsp;<?php echo $MOEDAS['credits'] ?></span>
 
                     </div>
                 </div>

@@ -120,6 +120,7 @@ define('avatarimage', $config['site.avatar']);
 define('redirecionamentos', $config['site.red']);
 define('rank_minimo_manutencao', $config['site.rank.minimo']);
 define('camuflarclient', $config['site.cmfclient']);
+define('urlapp', $config['site.appdownload']);
 // Util
 define('facebook', $config['tema.facebook']);
 define('twitter', $config['tema.twitter']);
