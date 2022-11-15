@@ -5,26 +5,30 @@
 </center>
 <hr>
 
-<h1>Sobre</h1> 
-Salsa CMS é uma simples CMS especialmente para o Arcturus e Arcturus Morningstar
+<h1>About</h1> 
+Salsa CMS is a simple CMS especially for Arcturus and Arcturus Morningstar <a href="https://github.com/victorlbs"> Victor</a>.
 
 
-<h2>Requisitos</h2> 
+<h2>Requirements</h2> 
 • PHP 7+
 <br> • MySQL
-<br> • Importar a <a target="_blank" href="https://github.com/victorlbs/Salsa-CMS-for-Arcturus-Emulator/blob/master/structure/util/sql/salsa.sql">salsa.sql</a>
+<br> • Import <a target="_blank" href="https://github.com/victorlbs/Salsa-CMS-for-Arcturus-Emulator/blob/master/structure/util/sql/salsa.sql">salsa.sql</a>
 
-<h2>Compatibilidade</h2> 
+<h2>Compatibility</h2> 
 • cPanel
 <br> • IIS
 <br> • Xampp
 
-<h2>Instalação</h2> 
-1. Faça o download do repositório; <br>
-2. Extraia os arquivos da Salsa CMS na sua pasta raíz; <br>
-3. Importe o arquivo <a target="_blank" href="https://github.com/victorlbs/Salsa-CMS-for-Arcturus-Emulator/blob/master/structure/util/sql/salsa.sql">salsa.sql</a> no seu banco de dados; <br>
-3. Configure o arquivo <b>arc.config.php</b> digite os dados do banco de dados e configurações da client; <br>
-4. Pronto,  basta usar; =)
+<h2>Installation</h2> 
+1. Download the repository; <br>
+2. Extract the Salsa CMS files into your root folder; <br>
+3. Import the file <a target="_blank" href="https://github.com/victorlbs/Salsa-CMS-for-Arcturus-Emulator/blob/master/structure/util/sql/salsa.sql">salsa.sql</a> in your database; <br>
+3. Configure the file <b>arc.config.php</b> enter the database data and client settings; <br>
+4. Ready, just use; =)
+
+<h2>Recommendatios</h2>
+Configure the Permissions table on database as you wish
+<br> Do not add/remove permissions ranks as you wish if u dont know how to add it later on the web
 
 
 
@@ -34,6 +38,6 @@ Salsa CMS é uma simples CMS especialmente para o Arcturus e Arcturus Morningsta
 <h5>© 2022 Salsa CMS 2.0
 <br>
 
-<p>Special thanks to: Victorbls (Creator of SalsaCMS)
+<p>Special thanks to: Victorbls (Creator of SalsaCMS) Krews (Arcuturus Developers) and Nitro Project (for Nitro)
 
 

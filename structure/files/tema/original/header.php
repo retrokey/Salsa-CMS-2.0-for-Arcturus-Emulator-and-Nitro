@@ -971,7 +971,7 @@
                                 <a class="dropdown-item" href="<?php echo url ?>/vips">VIP's Users</a>
                                 <div class="dropdown-divider"></div>
                                 
-                                <a class="dropdown-item" href="<?php echo url ?>/discord">Discord</a>
+                                <a class="dropdown-item" href="<?php echo discord ?>">Discord</a>
                              
                             </div>
                         </li>
