@@ -144,6 +144,8 @@ define('quartoinicial', $config['registro.quartoinicial']);
 define('reg', $config['registro.ativado']);
 define('contasporip', $config['registro.contasporip']);
 define('captcha', $config['registro.captcharegistro']);
+// Nitro
+define('nitropath', $config['nitro.url']);
 // Painel de controle
 define('rmin', $config['painel.rankminimo']);
 define('premiar_creditos', $config['painel.premiar_creditos']);

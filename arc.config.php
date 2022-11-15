@@ -36,7 +36,7 @@ $config['registro.quartoinicial'] = "1"; // Starter bedroom
 $config['registro.contasporip'] = 50; // Number of accounts per IP
 
 // Nitro configurations
-
+$config['nitro.url'] = "http://localhost/nitro"; // Nitro Folder's Path (https://localhost/nitro)
 
 // Client Configurations
 $config['connection.info.host'] = "localhost"; // VPS or Hamachi IP
