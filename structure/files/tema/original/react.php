@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <link rel="icon" href="<?php echo nitropath?>/favicon.ico"/>
+        <link rel="icon" href="./favicon.ico"/>
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
         <link rel="apple-touch-icon" sizes="180x180" href="<?php echo nitropath?>/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="<?php echo nitropath?>/favicon-32x32.png">
@@ -15,7 +15,7 @@
         <meta name="theme-color" content="#000000"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <base href="<?php echo nitropath?>/"><title>Nitro</title>
+        <base href="<?php echo nitropath?>/"><title><?php echo nome?> - Nitro</title>
         <link href="<?php echo nitropath?>/static/css/vendors.34eda13e.chunk.css" rel="stylesheet">
         <link href="<?php echo nitropath?>/static/css/main.49eedb51.chunk.css" rel="stylesheet">
     </head>
