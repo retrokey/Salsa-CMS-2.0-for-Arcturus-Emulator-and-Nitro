@@ -27,8 +27,8 @@ Salsa CMS is a simple CMS especially for Arcturus and Arcturus Morningstar <a hr
 4. Ready, just use; =)
 
 <h2>Recommendatios</h2>
-Configure the Permissions table on database as you wish
-<br> Do not add/remove permissions ranks as you wish if u dont know how to add it later on the web
+- Configure the Permissions table on database as you wish
+<br>- Do not add/remove permissions ranks as you wish if u dont know how to add it later on the web
 
 
 
