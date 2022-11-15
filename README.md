@@ -6,7 +6,7 @@
 <hr>
 
 <h1>About</h1> 
-Salsa CMS is a simple CMS especially for Arcturus and Arcturus Morningstar <a href="https://github.com/victorlbs"> Victor</a>.
+Salsa CMS is a simple CMS especially for Arcturus and Arcturus Morningstar made by <a href="https://github.com/victorlbs"> Victorlbs</a>.
 
 
 <h2>Requirements</h2> 
