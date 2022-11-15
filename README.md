@@ -12,7 +12,7 @@ Salsa CMS is a simple CMS especially for Arcturus and Arcturus Morningstar made 
 <h2>Requirements</h2> 
 • PHP 7+
 <br> • MySQL
-<br> • Import <a target="_blank" href="https://github.com/victorlbs/Salsa-CMS-for-Arcturus-Emulator/blob/master/structure/util/sql/salsa.sql">salsa.sql</a>
+<br> • Import <a target="_blank" href="https://github.com/retrokey/Salsa-CMS-2.0-for-Arcturus-Emulator-and-Nitro/blob/main/structure/util/sql/clear_db.sql">SalsaCMS's SQL</a>
 
 <h2>Compatibility</h2> 
 • cPanel
@@ -22,7 +22,7 @@ Salsa CMS is a simple CMS especially for Arcturus and Arcturus Morningstar made 
 <h2>Installation</h2> 
 1. Download the repository; <br>
 2. Extract the Salsa CMS files into your root folder; <br>
-3. Import the file <a target="_blank" href="https://github.com/victorlbs/Salsa-CMS-for-Arcturus-Emulator/blob/master/structure/util/sql/salsa.sql">salsa.sql</a> in your database; <br>
+3. Import the file <a target="_blank" href="https://github.com/retrokey/Salsa-CMS-2.0-for-Arcturus-Emulator-and-Nitro/blob/main/structure/util/sql/clear_db.sql">SalsaCMS's SQL</a> in your database; <br>
 3. Configure the file <b>arc.config.php</b> enter the database data and client settings; <br>
 4. Ready, just use; =)
 
