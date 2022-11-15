@@ -37,7 +37,7 @@ Salsa CMS is a simple CMS especially for Arcturus and Arcturus Morningstar made 
 <br>
 <h5>© 2022 Salsa CMS 2.0
 <br>
-
+<p>This is not a new one coded from 0 it's the Victorbls's one but with modifications and Nitro integrated
 <p>Special thanks to: Victorbls (Creator of SalsaCMS) Krews (Arcuturus Developers) and Nitro Project (for Nitro)
 
 
