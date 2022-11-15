@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Promoções ativas - ".nome."";
+$titulo = "".usuario.":  Active Promotions - ".nome."";
 include 'header.php';
 ?>
 
@@ -8,7 +8,7 @@ include 'header.php';
         <div class="col-md-8">
             <div class="list-group" style="margin-bottom: 20px">
                 <div class="list-group-item">
-                    <h5 style="font-weight: bold">Promoções ativas</h5>
+                    <h5 style="font-weight: bold">Active Promotions</h5>
                     <hr>
 
 
@@ -46,13 +46,13 @@ include 'header.php';
         </div>
         <div class="col-md-4">
             <div class="list-group" style="margin-bottom: 20px">
-                <div class="list-group-item list-header">Sobre promoções ativas</div>
+                <div class="list-group-item list-header">About active promotions</div>
                 <div class="list-group-item">
                     <p style="text-align: center">
                         <img src="https://3.bp.blogspot.com/-Q5w5sR74GxI/XIGQoQ2PxaI/AAAAAAABMY8/_vRgXm-s7EAB4aHFqWaHcRs8ZQyCBeNXgCKgBGAs/s1600/habbonados_construtores.png">
                     </p>
                     <p>
-                        Você pode ver todas as promoções ativas nesta aba. As promoções são atividades promovidas pelos administradores, você pode participar sempre que quiser e também pode ser um vencedor da promoção recebendo a recompensa definida pelo autor da promoção.
+                    You can see all active promotions in this tab. The promotions are activities promoted by the administrators, you can participate whenever you want and you can also be a winner of the promotion receiving the reward defined by the author of the promotion.
                     </p>
                 </div>
             </div>
@@ -67,14 +67,40 @@ include 'header.php';
             height: 380px;
         }
     </style>
-    <div class="salsa"></div>
-    <div style="font-weight: 14px;background: #1e262c; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
-        <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="font-weight: 14px;background: #1e262c; color: #fff; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 10px">
+        <div>
+            <b><?php echo nome ?> Hotel 2022</b> powered by <b><a style="color: #fff; text-decoration: underline" href="https://github.com/retrokey/" target="_blank">SalsaCMS 2.0</a></b>
+        </div>
+        <div class="d-flex" style="gap: 10px; font-size: 12px">
+            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Privacy Policy</a>
+            <div style="color: #a7a7a7;">|</div>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Terms and Conditions of Use</a>
+        </div>
+    </div>
+</div>
 
-            <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
-               
-                                                    </span>
+    <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>
+        <div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;">
+
         </div>
     </div>
 

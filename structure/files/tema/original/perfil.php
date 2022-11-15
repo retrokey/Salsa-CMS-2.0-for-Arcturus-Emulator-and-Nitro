@@ -11,7 +11,7 @@ mysqli_free_result($ra);
 $sql3 = "SELECT * FROM users WHERE username='".$noticiafinal."' order by id DESC LIMIT 1";
 $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
 while ($row3 = $query1->fetch_assoc()) {
-$titulo = "Perfil de ".$row3['username']." - ".nome."";
+$titulo = "".$row3['username']."'s Profile - ".nome."";
 include 'header.php';
 ?>
 
@@ -35,7 +35,7 @@ include 'header.php';
                 <div class="list-group-item" style="padding: 5 1.25rem;">
                     <ul class="nav" style="float: left">
                         <li class="nav-item">
-                            <div style="font-weight: bold;">Missão:</div>
+                            <div style="font-weight: bold;">Mission:</div>
                         </li>
                         <li class="nav-item">
                             <div style="margin-left: 3px;"><?php echo $row3['motto'] ?></div>
@@ -216,11 +216,11 @@ if ($cur != null || $sessao != null || usuario != null)
                         <br>
 
                         <div class="card">
-                            <div class="list-group-item list-header">Recados para
+                            <div class="list-group-item list-header">Messages to
                                 <?php echo $row3['username'] ?>
                             </div>
                             <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary">
-                        Deixar um recado <span class="badge badge-light"><?php
+                            Leave a message <span class="badge badge-light"><?php
   $sql="SELECT * FROM salsa_postagens WHERE donoperfil='".$row3['username']."' order by id";
   if ($result=mysqli_query($conn,$sql))
   {
@@ -243,12 +243,12 @@ while ($bss = $aa->fetch_assoc()) {
 
                                         <li class="list-group-item">
                                             <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $bss['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
-                                            <a href="/perfil?=<?php echo $bss['usuario'] ?>"> <b><?php echo $bss['usuario'] ?></b> </a><i>diz:</i>
+                                            <a href="/perfil?=<?php echo $bss['usuario'] ?>"> <b><?php echo $bss['usuario'] ?></b> </a><i>says:</i>
                                             <?php echo fs($bss['mensagem']) ?>
 
                                                 <div id="salsdiv" style="float: right;">
-                                                    <img src="https://4.bp.blogspot.com/-0CuMZcPJZXY/XZVaFhMCKAI/AAAAAAABWaU/U6Jas6B8_H0FdAEc1g1Vc59DxBOHc93FwCKgBGAsYHg/s1600/Icon214.png"> Postado em
-                                                    <?php echo date('d/m/Y', $bss['data']) . ' às ' . date('H:i:s', $bss['data']) ?>
+                                                    <img src="https://4.bp.blogspot.com/-0CuMZcPJZXY/XZVaFhMCKAI/AAAAAAABWaU/U6Jas6B8_H0FdAEc1g1Vc59DxBOHc93FwCKgBGAsYHg/s1600/Icon214.png"> Posted in
+                                                    <?php echo date('d/m/Y', $bss['data']) . ' at ' . date('H:i:s', $bss['data']) ?>
                                                 </div>
 
                                         </li>
@@ -268,7 +268,7 @@ while ($bss = $aa->fetch_assoc()) {
 
             <div class="col-md-4">
             
-                <a href="/client" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Entrar no Hotel</a>
+                <a href="/client" target="habbinc_client" class="btn btn-success btn-lg" style="margin-bottom:10px; font-size:20px; height:50px; width:100%" onclick_off="HabboClient.openOrFocus(this); return false;" target="clientHotel">Enter to the Hotel</a>
                 
                 <?php
                     if ($cur != null || $sessao != null || usuario != null)
@@ -279,13 +279,13 @@ while ($bss = $aa->fetch_assoc()) {
                     {
                         ?>
                       <button type="button" data-toggle="modal" data-target="#Amizade" class="btn btn-friend-request">
-                        Enviar pedido de amizade para <?php echo $row3['username'] ?>
+                      Send friend request to     <?php echo $row3['username'] ?>
                         </button> 
                     <?php } ?>
                     
                 <?php } else 
                 {
-                    echo 'Você precisa estar logado para deixar um recado para <b> ' . $row3['username'];
+                    echo 'You must be logged in to leave a message for <b> ' . $row3['username'];
                     echo '</b>';
                 } ?>
                     <br>
@@ -293,7 +293,7 @@ while ($bss = $aa->fetch_assoc()) {
 
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <div class="list-group-item list-header">Sobre</div>
+                        <div class="list-group-item list-header">About</div>
                     </div>
                     <div class="list-group-item config-controller open" data-target="#config">
 
@@ -315,35 +315,35 @@ while ($bss = $aa->fetch_assoc()) {
                         ?>
                             <!-- 001 -->
                             <img src="https://4.bp.blogspot.com/-ct-jJxeksOw/XZVaFuOjUwI/AAAAAAABWaU/aev-E83ONl4bMPaV9LlSHivFp7vDBlUhQCKgBGAsYHg/s1600/Icon14.png">
-                            <b>Membro desde:</b>
+                            <b>Member since:</b>
                             <?php echo date('d/m/Y', $row3['account_created']) ?>
                                 <br>
                                 <!-- 001 -->
 
                                 <!-- 001 -->
-                                <img src="https://habboo-a.akamaihd.net/c_images/catalogue/icon_142.png">
-                                <b>Último login:</b>
+                                <img src="https://www.habborator.org/archive/icons/mini/tab_icon_02_hotel.gif" style="/*! align-items: center; */margin-left: 6px;margin-bottom: 5px;">
+                                <b style="margin-left:7px;">Last login:</b>
                                 <?php echo date('d/m/Y', $row3['last_login']) ?>
                                     <br>
                                     <!-- 001 -->
 
                                     <!-- 001 -->
                                     <img src="https://4.bp.blogspot.com/-jnRT_Ue61O0/XZVaFvYsS3I/AAAAAAABWaU/LFfmD5Or3mIzwj3IeLsntcUXUr92jHJlgCKgBGAsYHg/s1600/Icon76.png">
-                                    <b>Está online:</b>
+                                    <b>Is Online:</b>
                                     <?php echo $sim ?>
                                         <br>
                                         <!-- 001 -->
 
                                         <!-- 001 -->
                                         <img src="https://4.bp.blogspot.com/-Ul4YHCLf3fA/XZVaFsDQORI/AAAAAAABWaU/-sazdqyFAt4wYmnsSa3mHKYCEcdUjGKjQCKgBGAsYHg/s1600/Icon3.png">
-                                        <b>Créditos:</b>
+                                        <b>Credits:</b>
                                         <?php echo $row3['credits']?>
                                             <br>
                                             <!-- 001 -->
 
                                             <!-- 001 -->
                                             <img src="https://2.bp.blogspot.com/-xRvHc6jTz-g/XZVaFhr9eNI/AAAAAAABWaU/PtGdLf-yZ2AnHDoRDtRs-vN0Wm680fZLQCKgBGAsYHg/s1600/Icon315.png">
-                                            <b>Missão:</b>
+                                            <b>Mission:</b>
                                             <?php echo fs($row3['motto']) ?>
                                                 <br>
 
@@ -352,13 +352,13 @@ while ($bss = $aa->fetch_assoc()) {
 
                                             <!-- 001 -->
                                             <img src="https://4.bp.blogspot.com/-opxiFJrR7p8/XZVaFjWpBAI/AAAAAAABWaU/vVbAzfkicbkx4d8QewXpmJeqc35I_UNaQCKgBGAsYHg/s1600/Icon84.png">
-                                            <b>Pontos de promoção:</b>
+                                            <b>Promotion points:</b>
                                             <?php echo fs($row3['pontos_promocao']) ?>
                                                 <br>
 
 
                                                  <img src="https://2.bp.blogspot.com/-098Yeb26X6w/XZVaFlxo2bI/AAAAAAABWaU/b0KJ3x5wQMUCbHyJq-Lq6J2H61lvkVEtgCKgBGAsYHg/s1600/Icon306.png">
-                                            <b>Eventos ganhos:</b>
+                                            <b>Winning events:</b>
                                             <?php echo fs($row3['pontos_evento']) ?>
                                                 <br>
 
@@ -374,7 +374,7 @@ while ($bss = $aa->fetch_assoc()) {
 
                                                     <!-- 001 -->
                                                     <img src="https://1.bp.blogspot.com/-fwCjMfsN0ME/XZVaFgsShjI/AAAAAAABWaU/cT3cQUzCarQ80QItLkhiItWKMLA1TOZ1wCKgBGAsYHg/s1600/Icon29.png">
-                                                    <b>Referidos:</b>
+                                                    <b>Referrals:</b>
                                                     <?php echo fs($row3['referidos']) ?>
                                                         <br>
                                                         <!-- 001 -->
@@ -387,7 +387,7 @@ while ($bss = $aa->fetch_assoc()) {
                         ?>
                                                             <!-- 001 -->
                                                             <img src="https://1.bp.blogspot.com/-IKbJ-qUn8EE/XZVaFmyA3AI/AAAAAAABWaU/NhWiOSXLkO4c5lBPDDaI4ChHH4XuSGj1QCKgBGAsYHg/s1600/Icon304.png">
-                                                            <b>Diamantes:</b>
+                                                            <b>Diamonds:</b>
                                                             <?php echo $b['amount']?>
                                                                 <br>
                                                                 <!-- 001 -->
@@ -399,7 +399,7 @@ while ($bss = $aa->fetch_assoc()) {
                 <br>
                 <div class="panel panel-warning">
                     <div class="panel-heading">
-                        <div class="list-group-item list-header">Emblemas de
+                        <div class="list-group-item list-header">Badges of
                             <?php echo $row3['username'] ?>
                         </div>
                     </div>
@@ -418,15 +418,15 @@ while ($bss = $aa->fetch_assoc()) {
 
                 <br>
                  <div class="panel panel-success">
-    <div class="list-group-item list-header">Pesquisar por usuário</div>
+    <div class="list-group-item list-header">Search by user</div>
           <div class="list-group-item config-controller open" data-target="#config">
             <form method="post"> 
- <input placeholder="Digite o nome de usuário..." class="form-control" type="text" name="usuariobus">
+ <input placeholder="Enter a username..." class="form-control" type="text" name="usuariobus">
 
 
             <?php SalsaConta::buscar_usuario($conn) ?>
            <br>
-            <button style="float: right;" type="submit" name="pesq" class="btn btn-dark">Procurar</button> 
+            <button style="float: right;" type="submit" name="pesq" class="btn btn-dark">Search</button> 
            <br>
            <br>
         </div>
@@ -449,14 +449,23 @@ while ($bss = $aa->fetch_assoc()) {
             height: 380px;
         }
     </style>
-    <div class="salsa"></div>
-    <div style="font-weight: 14px;background: #1e262c; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
-        <div class="container">
+        <div style="font-weight: 14px;background: #1e262c; color: #fff; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 10px">
+        <div>
+            <b><?php echo nome ?> Hotel 2022</b> powered by <b><a style="color: #fff; text-decoration: underline" href="https://github.com/retrokey/" target="_blank">SalsaCMS 2.0</a></b>
+        </div>
+        <div class="d-flex" style="gap: 10px; font-size: 12px">
+            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Privacy Policy</a>
+            <div style="color: #a7a7a7;">|</div>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Terms and Conditions of Use</a>
+        </div>
+    </div>
+</div>
 
-            <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
-               
-                                                    </span>
+    <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>
+        <div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;">
+
         </div>
     </div>
 

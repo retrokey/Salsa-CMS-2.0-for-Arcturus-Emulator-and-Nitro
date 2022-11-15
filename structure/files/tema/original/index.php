@@ -41,38 +41,38 @@
      
     <meta name="robots" content="all">
     <meta name="Googlebot" content="index, follow"
-       <meta name="description" lang="pt-br" content="Servidor de Habbo Hotel Pirata Gratis 2020 - O Habbface hotel é um servidor de Habbo gratuito com milhares de moedas de gratis, clique em criar sua conta e começe a se divertir com centenas de usuários online. Temos eventos e promoções diariamente para você se divertir!" />
-    <meta name="description" lang="pt" content="Servidor de Habbo Hotel Pirata Gratis 2020 - O Habbface hotel é um servidor de Habbo gratuito com milhares de moedas de gratis, clique em criar sua conta e começe a se divertir com centenas de usuários online. Temos eventos e promoções diariamente para você se divertir!" />
-    <meta name="description" lang="en-us" content="Habbo Retro 2020 for free - Habbface Hotel is a free Habbo retro server where you can have fun with lots of online users. Join us today!" />
-    <meta name="description" lang="en" content="Habbo Retro 2020 for free - Habbface Hotel is a free Habbo retro server where you can have fun with lots of online users. Join us today!" />
-    <meta name="keywords" content="Habbo, Habbo Pirata, habbiz, habb.biz Habbo Hotel, Habbface, habblet, retro server, habb, rabbo, hotel, age, habbo age, habbo 2020, Like Hotel, Habbo Privado, Pirata, Privado, Habbo.com.br, habbo.com, Habblive, habbo online, habbo lotado, habbo bom, habbo atualizado, habbo dino, habbinfo, fresh-hotel, crazzy, virtual, grátis, comunidade, avatar, bate papo, rpg, entre, social, grupos, hebbohotel, hebbo, seguro, jogue, jogos, crie amigos, mmo, mmorpg, rpg online" />
+       <meta name="description" lang="pt-br" content="Habbo Retro, Habbo Hotel English, Habbo Retroserver, Habbo Free HC, Servidor de Habbo Hotel Pirata Gratis 2020 - O Habbface hotel é um servidor de Habbo gratuito com milhares de moedas de gratis, clique em criar sua conta e começe a se divertir com centenas de usuários online. Temos eventos e promoções diariamente para você se divertir!" />
+    <meta name="description" lang="pt" content="Habbo Retro, Habbo Hotel English, Habbo Retroserver, Habbo Free HC, Servidor de Habbo Hotel Pirata Gratis 2020 - O Habbface hotel é um servidor de Habbo gratuito com milhares de moedas de gratis, clique em criar sua conta e começe a se divertir com centenas de usuários online. Temos eventos e promoções diariamente para você se divertir!" />
+    <meta name="description" lang="en-us" content="Habbo Retro, Habbo Hotel English, Habbo Retroserver, Habbo Free HC, Habbo Retro 2020 for free - Habbface Hotel is a free Habbo retro server where you can have fun with lots of online users. Join us today!" />
+    <meta name="description" lang="en" content="Habbo Retro, Habbo Hotel English, Habbo Retroserver, Habbo Free HC, Habbo Retro 2020 for free - Habbface Hotel is a free Habbo retro server where you can have fun with lots of online users. Join us today!" />
+    <meta name="keywords" content="Habbo Retro, Habbo Hotel English, Habbo Retroserver, Habbo Free HC, Habbo, Habbo Pirata, habbiz, habb.biz Habbo Hotel, Habbface, habblet, retro server, habb, rabbo, hotel, age, habbo age, habbo 2020, Like Hotel, Habbo Privado, Pirata, Privado, Habbo.com.br, habbo.com, Habblive, habbo online, habbo lotado, habbo bom, habbo atualizado, habbo dino, habbinfo, fresh-hotel, crazzy, virtual, grátis, comunidade, avatar, bate papo, rpg, entre, social, grupos, hebbohotel, hebbo, seguro, jogue, jogos, crie amigos, mmo, mmorpg, rpg online" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="Portuguese">
     <meta name="revisit-after" content="1 days">
-    <meta name="lang" content="pt-br">
-    <meta name="country" content="Brazil">
+    <meta name="lang" content="En">
+    <meta name="country" content="England">
     <meta name="hreflang" content="pt-br">
     <meta name="category" content="Website">
 	<meta name="rating" content="General" />
 
     <meta property="image" content="https://images.habbo.com/web_images/habbo-web-articles/lpromo_gen15_74.png">
-    <meta property="description" content="Faça o seu check-in no maior Hotel virtual do mundo DE GRAÇA! Você poderá fazer novos amigos, jogar e criar seus próprios jogos, bater papo, construir seus quartos e muito mais!">
+    <meta property="description" content="Check into the world's largest virtual hotel for FREE! You can make new friends, play and create your own games, chat, build your own rooms and much more!">
 
-    <meta property="og:title" content="<?php echo nome ?>:  Faça amigos, divirta-se e seja famoso!">
+    <meta property="og:title" content="<?php echo nome ?>:  Make friends, have fun and be famous!">
     <meta property="og:image" content="https://images.habbo.com/web_images/habbo-web-articles/lpromo_gen15_74.png">
-    <meta property="og:description" content="Faça o seu check-in no maior Hotel virtual do mundo DE GRAÇA! Você poderá fazer novos amigos, jogar e criar seus próprios jogos, bater papo, construir seus quartos e muito mais!">
+    <meta property="og:description" content="Check into the world's largest virtual hotel for FREE! You can make new friends, play and create your own games, chat, build your own rooms and much more!">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:type" content="game">
     <meta property="og:url" content="<?php echo url ?>">
-    <meta property="og:site_name" content="<?php echo nome ?>:  Faça amigos, divirta-se e seja famoso!">
-    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="<?php echo nome ?>:  Make friends, have fun and be famous!">
+    <meta property="og:locale" content="en">
     <meta property="fb:app_id" content="-">
     <meta property="article:tag" content="quiz">
     <meta property="article:author" content="<?php echo facebooklink ?>">
     <meta property="article:publisher" content="<?php echo facebooklink ?>">
 
     <meta name="twitter:card" content="photo">
-    <meta name="twitter:title" content="<?php echo nome ?>:  Faça amigos, divirta-se e seja famoso!">
+    <meta name="twitter:title" content="<?php echo nome ?>:  Make friends, have fun and be famous!">
 
     <script src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/OneSignalSDK.js" async=""></script>
 
@@ -901,12 +901,12 @@
 </head>
 
 <body ng-app="formApp" class="animated fadeIn ng-scope">
-<a href="https://discord.gg/4ra8n2A3dV" class="animated shake" target="_blank" style="box-shadow: 2px 2px 10px rgba(0,0,0,.2);display: block; position: fixed; bottom: 15px; right: 15px; border-radius: 100px; padding: 10px 15px; background: #7289da;font-size: 16px;color: #fff;">Servidor no Discord</a>
+<a href="<?php echo discord ?>" class="animated shake" target="_blank" style="box-shadow: 2px 2px 10px rgba(0,0,0,.2);display: block; position: fixed; bottom: 15px; right: 15px; border-radius: 100px; padding: 10px 15px; background: #7289da;font-size: 16px;color: #fff;">Discord Server</a>
     <div id="sound"></div>
 
     <div class="cookies-warning animated bounce">
-        <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> Nós utilizamos cookies para melhorar a sua experiência aqui dentro. Ao continuar utilizando nosso site você está de acordo com isso.
-        <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">OK?</span>
+        <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> We use cookies to improve your experience here. By continuing to use our site you agree to this.
+        <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">Accept</span>
     </div>
     <div id="master-topbg" ng-controller="gameHeaderController" class="ng-scope">
         <div class="container">
@@ -945,18 +945,18 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav w-100">
                         <li class="nav-item  active">
-                            <a class="nav-link" href="<?php echo url ?>/index">Início</a>
+                            <a class="nav-link" href="<?php echo url ?>/index">Index</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="<?php echo url ?>/registro">Registre-se</a>
+                            <a class="nav-link" href="<?php echo url ?>/registro">Register</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-plus"></i> Comunidade
+                                <i class="fas fa-plus"></i> Community
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipes</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/vips">Usuários VIPs</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/staff">Staff Team</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/vips">VIP's Users</a>
                                 <div class="dropdown-divider"></div>
                                 
                                 <a class="dropdown-item" href="<?php echo url ?>/discord">Discord</a>
@@ -965,18 +965,18 @@
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i></i> Jornalismo
+                                <i></i> Journalism
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php
                                 $sql4 = "SELECT * FROM cms_news order by id DESC LIMIT 1";
                                 $query2 = mysqli_query($conn, $sql4) or die(mysqli_error($conn));
                                 while ($row4 = $query2->fetch_assoc()) { ?>
-                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">Notícias Publicadas</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">News</a>
 
                             <?php } ?>
 
-                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Promoções ativas</a>
+                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Active Promotions</a>
                               
                             </div>
                         </li>
@@ -989,8 +989,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Seja bem-vind@ ao <?php echo nome ?>!</h3>
-                <h5 style="color: #a7a7a7;margin-bottom:30px">Crie sua conta, construa quartos, converse e faça novos amigos!</h5>
+                <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Welcome to <?php echo nome ?>!</h3>
+                <h5 style="color: #a7a7a7;margin-bottom:30px">Create your account, build rooms, chat and make new friends!</h5>
             </div>
             <div class="col-md-4">
                 <div class="card">
@@ -1001,7 +1001,7 @@
                   
 
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-header">Entrar</li>
+                        <li class="list-group-item list-header">Login</li>
                         <li class="list-group-item">
                             <div id="alerts">
                                  <?php
@@ -1016,17 +1016,17 @@
                             </div>
                             <form method="post" action="" class="ng-pristine ng-valid">
                                 <div class="form-group">
-                                    <label>Usuário:</label>
+                                    <label>User:</label>
                                     <input type="text" class="form-control" id="username" name="usuario_salsa" required="">
                                 </div>
                                 <div class="form-group">
-                                    <label>Senha:</label>
+                                    <label>Password:</label>
                                     <input type="password" class="form-control" id="password" name="senha_salsa" required="">
                                 </div>
                                 <div>
 
                                 </div>
-                                <button type="submit" name="conectar" class="btn btn-primary g-recaptcha" style="float: right">Entrar</button>
+                                <button type="submit" name="conectar" class="btn btn-primary g-recaptcha" style="float: right">Login</button>
                             </form>
                         </li>
                     </ul>
@@ -1037,19 +1037,19 @@
                     <div class="col-md-12">
                         <div class="card" id="master-indexbigbg">
                             <div class="card-body" style="padding: 20px;">
-                                <i class="fa fa-check-circle" aria-hidden="true"></i> Poste seus status, fotos e vídeos na inicial do Hotel (novo)!
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Post your statuses, photos and videos on the Hotel homepage (new)!
                                 <br>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i> Monte seu visual e seu quarto com moedas ilimitadas!
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Build your look and your room with unlimited coins!
                                 <br>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i> Cadastre-se agora e ganhe milhares de moedas!
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Register now and win thousands of coins!
                                 <br>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i> Jogue eventos todos os dias da semana!
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Play events every day of the week!
                                 <br>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i> Não pague nada, é tudo de graça!
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Pay nothing, it's all free!
                                 <br>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i> Ganhe moedas ficando online!
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Earn coins by staying online!
                                 <br>
-                                <i class="fa fa-check-circle" aria-hidden="true"></i> Vagas na equipe!
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Join the team!
                                 <br>
                             </div>
                             <img src="<?php echo url ?>/structure/files/tema/<?php echo tema ?>/css_files/wUAZubl.gif" style="position: absolute; right: -25px;bottom: -6px;">
@@ -1057,16 +1057,16 @@
                     </div>
                     <div class="col-md-12">
                         <a href="<?php echo url ?>/registro" class="btn btn-primary btn-lg btn-block" style="color: #fff; margin-top: 8px;">
-                        O que está esperando?
-                        <h3 style="margin:0;padding:0; color: #fff;font-weight: bold;">CRIE SUA CONTA!</h3>
+                        What are you waiting for?
+                        <h3 style="margin:0;padding:0; color: #fff;font-weight: bold;">CREATE YOUR ACCOUNT!</h3>
                     </a>
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <hr style="margin-top: 30px; margin-bottom: 30px">
-                <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Notícias quentinhas!</h3>
-                <h5 style="color: #a7a7a7;margin-bottom:30px">Veja o que está acontecendo no Hotel...</h5>
+                <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Hot news!</h3>
+                <h5 style="color: #a7a7a7;margin-bottom:30px">See what's happening at the Hotel...</h5>
             </div>
 
              <?php
@@ -1104,9 +1104,9 @@
             <b><?php echo nome ?> Hotel 2022</b> powered by <b><a style="color: #fff; text-decoration: underline" href="https://github.com/retrokey/" target="_blank">SalsaCMS 2.0</a></b>
         </div>
         <div class="d-flex" style="gap: 10px; font-size: 12px">
-            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Política de Privacidade</a>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Privacy Policy</a>
             <div style="color: #a7a7a7;">|</div>
-            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Termos e Condições de Uso</a>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Terms and Conditions of Use</a>
         </div>
     </div>
 </div>

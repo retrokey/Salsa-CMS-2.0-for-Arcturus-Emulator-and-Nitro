@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Ver contas fakes de um usuário";
-    $desc = "Essa função permite você veja se um usuário possui contas fakes.";
+    $titulo = "Viewing a user's fake accounts";
+    $desc = "This function allows you to see if a user has fake accounts.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -1582,7 +1582,7 @@
     <div class="col-sm-12">
          <?php SalsaPainel::contas_fakes($conn) ?>
                                 <form method="post">
-                                    <label>Nome do usuário que será verificado:</label>
+                                    <label>Name of the user to be verified:</label>
                                     <br>
                                     <input class="form-control" type="text" name="vlr1" required="">
                                  

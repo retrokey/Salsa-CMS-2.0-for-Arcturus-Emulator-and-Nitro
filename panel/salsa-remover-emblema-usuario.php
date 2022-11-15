@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Remover emblemas de um usuário";
-    $desc = "Essa função permite você remova emblemas de um usuário mesmo que ele esteja offline.";
+    $titulo = "Remove badges from a user";
+    $desc = "This function allows you to remove badges from a user even if they are offline.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -438,10 +438,10 @@
     <div class="col-sm-12">
          <?php SalsaPainel::remover_emblema($conn) ?>
                                 <form method="post">
-                                    <label>Nome do usuário que perderá o emblema:</label>
+                                    <label>Name of user who will lose the badge:</label>
                                     <br>
                                     <input class="form-control" type="text" name="vlr1" required="">
-                                    <label>Código do emblema:</label>
+                                    <label>Badge Code:</label>
                                     <br>
                                     <input class="form-control" type="text" name="vlr2" required="">
                                  

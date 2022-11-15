@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Publicar notícias";
-    $desc = "Essa função permite você publique notícias que ficarão disponíveis na CMS.";
+    $titulo = "Publish news";
+    $desc = "This function allows you to publish news that will be available on the CMS.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -503,17 +503,19 @@
 .maxthon_tip{background-color:white; border:none;} .maxthon_tip:active{background-color: #E6F4FF;border:1px solid #449EFB; } .maxthon_tip:hover{background-color:#E6F4FF; border:1px solid #449EFB;}
 </style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;box-sizing: content-box;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style></head>
 <body>
-    <?php
+<?php
     if (rank == 5)
-        $salsarank = "Moderador";
+        $salsarank = "Moderator";
+    if (rank == 6)
+        $salsarank = "Game Master";
     if (rank == 7)
-        $salsarank = "Administrador";
+        $salsarank = "Administrator";
     if (rank == 8)
-        $salsarank = "Gerente";
+        $salsarank = "Manager";
     if (rank == 9)
         $salsarank = "CEO";
     if (rank == 10)
-        $salsarank = "Fundador";
+        $salsarank = "Founder";
     ?>
 <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
     <div class="app-header header-shadow">
@@ -1583,22 +1585,22 @@
          <?php SalsaPainel::publicar_noticia($conn) ?>
                                 <form method="post">
 
-                                    <b><label>Titulo da notícia:</label></b>
+                                    <b><label>Title of the news:</label></b>
                                     <input class="form-control" type="text" name="vlr2" required="">
 
-                                    <b><label>Descrição curta da notícia:</label></b>
+                                    <b><label>Short news description:</label></b>
                                     <input class="form-control" type="text" name="vlr3" required="">
 
-                                    <b><label>A promoção está ativa?</label></b>
+                                    <b><label>The promotion is active?</label></b>
                                     <select name="vlr5" class="form-control">
                                         <option selected="" value="0">Não</option>
                                         <option selected="" value="1">Sim</option>
                                     </select>
 
 
-                                    <b><label>Imagem de capa (exemplo http://imgur.com/anujWm.png):</label></b>
+                                    <b><label>Cover image (example http://imgur.com/anujWm.png):</label></b>
                                     <input class="form-control" type="text" name="vlr4" required="">
-                                    <b><label>Conteúdo da notícia:</label></b>
+                                    <b><label>News content:</label></b>
                                     <br>
                                         <textarea name="news"  rows="15" cols="80"></textarea>
                                     <br>

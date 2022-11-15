@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <?php include 'salsa-sessao.php' ?>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Conversas dos quartos";
-    $desc = "Veja todas as conversas do Hotel feitas em quartos.";
+    $titulo = "Bedroom Conversations";
+    $desc = "View all Hotel conversations made in rooms.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -504,17 +504,19 @@
 </style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;box-sizing: content-box;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style></head>
 <body>
     <?php
-    if (rank == 5)
-        $salsarank = "Moderador";
-    if (rank == 7)
-        $salsarank = "Administrador";
-    if (rank == 8)
-        $salsarank = "Gerente";
-    if (rank == 9)
-        $salsarank = "CEO";
-    if (rank == 10)
-        $salsarank = "Fundador";
-    ?>
+     if (rank == 5)
+     $salsarank = "Moderator";
+     if (rank == 6)
+     $salsarank = "Game Master";
+     if (rank == 7)
+     $salsarank = "Administrator";
+     if (rank == 8)
+     $salsarank = "Manager";
+     if (rank == 9)
+     $salsarank = "CEO";
+     if (rank == 10)
+     $salsarank = "Founder";
+ ?>
 <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
     <div class="app-header header-shadow">
         <div class="app-header__logo">
@@ -1580,10 +1582,10 @@
                                 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">Quarto</th>
-      <th scope="col">Usuário</th>
-      <th scope="col">Mensagem</th>
-      <th scope="col">Data</th>
+      <th scope="col">Room</th>
+      <th scope="col">User</th>
+      <th scope="col">Message</th>
+      <th scope="col">Date</th>
     </tr>
   </thead>
   <tbody>

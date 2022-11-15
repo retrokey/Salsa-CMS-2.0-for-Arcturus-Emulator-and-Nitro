@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Usuários VIP - ".nome."";
+$titulo = "".usuario.":  VIP users - ".nome."";
 include 'header.php';
 ?>
 
@@ -11,14 +11,14 @@ include 'header.php';
             <img src="https://i.imgur.com/5BjS8Lx.gif" style="float:left">
         </div>
         <div style="width: calc(100% - 50px); float: right">
-            <h5 style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">Usuários VIPs</h5>
-            <div style="color: #8f9396;font-weight: normal; font-size: 15px; margin-bottom: 10px">Alta sociedade do <?php echo nome ?> Hotel.</div>
+            <h5 style="color:#1e262c;font-weight: bold;margin-top:0px; margin-bottom: 0px">VIP users</h5>
+            <div style="color: #8f9396;font-weight: normal; font-size: 15px; margin-bottom: 10px">High society of <?php echo nome ?> Hotel.</div>
         </div>
     </div>
             <div class="row">
                                 
                                 <?php
-                                $sql3 = "SELECT * FROM users WHERE rank=3";
+                                $sql3 = "SELECT * FROM users WHERE rank=2";
     $query1 = mysqli_query($conn, $sql3) or die(mysqli_error($conn));
     while ($row2 = $query1->fetch_assoc()) {
         ?>
@@ -36,7 +36,7 @@ include 'header.php';
                                 if ($row2['online'] == 0)
                                 {
                                     ?>
-                                                                    <span class="badge badge-secondary" style="float: right; margin-right: 10px; font-size: 11px"><?php echo date('d/m/Y', $row2['last_online']) . ' às ' . date('H:i:s', $row2['last_online']) ?></span>
+                                                                    <span class="badge badge-secondary" style="float: right; margin-right: 10px; font-size: 11px"><?php echo date('d/m/Y', $row2['last_online']) . ' at ' . date('H:i:s', $row2['last_online']) ?></span>
 
                                                                 <?php } elseif ($row2['online'] == 1) {
 
@@ -48,7 +48,7 @@ include 'header.php';
 
 
                                                             </div>
-                            <div><b>Missão: </b><?php echo fs($row2['motto']) ?></div>
+                            <div><b>Mission: </b><?php echo fs($row2['motto']) ?></div>
                             <div><b>Discord: </b><?php echo $row2['discord'] ?></div>
                         </div>
                     </div>
@@ -78,14 +78,23 @@ include 'header.php';
             height: 380px;
         }
     </style>
-    <div class="salsa"></div>
-    <div style="font-weight: 14px;background: #1e262c; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
-        <div class="container">
+    <div style="font-weight: 14px;background: #1e262c; color: #fff; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 10px">
+        <div>
+            <b><?php echo nome ?> Hotel 2022</b> powered by <b><a style="color: #fff; text-decoration: underline" href="https://github.com/retrokey/" target="_blank">SalsaCMS 2.0</a></b>
+        </div>
+        <div class="d-flex" style="gap: 10px; font-size: 12px">
+            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Privacy Policy</a>
+            <div style="color: #a7a7a7;">|</div>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Terms and Conditions of Use</a>
+        </div>
+    </div>
+</div>
 
-            <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
-               Powered by <a style="color: white;" target="_blank" href="https://github.com/victorlbs/Salsa-CMS---CMS-for-Arcturus-Emulator"><b>Salsa CMS</b></a>
-                                                    </span>
+    <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>
+        <div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;">
+
         </div>
     </div>
 

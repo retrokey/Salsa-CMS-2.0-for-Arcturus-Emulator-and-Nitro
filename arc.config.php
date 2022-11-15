@@ -3,7 +3,7 @@
 $config['database_hostname'] = "localhost"; // Hostname
 $config['database_username'] = "root"; // Nome de usuário do banco de dados
 $config['database_password'] = ""; // Senha do usuário do banco de dados
-$config['database_name'] = "db"; // Nome do banco de dados
+$config['database_name'] = "clear_db"; // Nome do banco de dados
 // Configurações do site
 
 

@@ -25,14 +25,14 @@
     <div id="FlashSalsa" style="display: none;">
         <center>
             <div class="salsacontainer"></div>
-            <h1>POR GENTILEZA, PERMITA O FLASH NO SEU NAVEGADOR.</h1>
-            <p class="salsatexto">ATENÇÃO USUÁRIOS GOOGLE CHROME!
-                <br> Você precisa ativar manualmente o Flash Player nas configurações do seu navegador antes de entrar no Hotel.
-                <br> Por favor, veja o tutorial e logo após clique em Permitir Flash.</p>
+            <h1>PLEASE ENABLE FLASH IN YOUR BROWSER.</h1>
+            <p class="salsatexto">ATTENTION GOOGLE CHROME USERS!
+                <br> You need to manually activate Flash Player in your browser settings before entering the Hotel.
+                <br> Please watch the tutorial and then click Allow Flash.</p>
 
             <br>
-            <a ng-href="http://www.adobe.com/go/getflashplayer" target="_blank" rel="noopener noreferrer" href="http://www.adobe.com/go/getflashplayer" habbo-android-download-link="" habbo-ios-download-link="" class="register-banner__button" translate="REGISTER_PROMPT">Permitir Flash</a>
-            <a style="width: 240px;" target="_blank" rel="noopener noreferrer" href="https://www.habbo.com.br/community/article/28485/importante-habilite-o-flash-player-nonavegador-google-chrome" habbo-android-download-link="" habbo-ios-download-link="" class="register-banner__button" translate="REGISTER_PROMPT">Tutorial de ativação</a>
+            <a ng-href="http://www.adobe.com/go/getflashplayer" target="_blank" rel="noopener noreferrer" href="http://www.adobe.com/go/getflashplayer" habbo-android-download-link="" habbo-ios-download-link="" class="register-banner__button" translate="REGISTER_PROMPT">Enable Flash</a>
+            <a style="width: 240px;" target="_blank" rel="noopener noreferrer" href="https://www.habbo.com.br/community/article/28485/importante-habilite-o-flash-player-nonavegador-google-chrome" habbo-android-download-link="" habbo-ios-download-link="" class="register-banner__button" translate="REGISTER_PROMPT">Activation Tutorial</a>
 
             <div class="client-error__hotel-button-div">
             </div>
@@ -51,12 +51,12 @@
             "supersonic_custom_css":"https:\/\/images.habbo.com\/game-data-server-static\/\/.\/hotel.731d1960.css",
             "external.figurepartlist.txt":"<?php echo $config['external.figurepartlist.txt'] ?>",
             "flash.client.origin":"popup",
-            "client.starting":"Por favor aguarde! O Habbo est\u00E1 carregando...",
+            "client.starting":"Please wait! Habbo is loading...",
             "processlog.enabled":"1",
             "has.identity":"1",
             "avatareditor.promohabbos":"https:\/\/www.habbo.com.br\/api\/public\/lists\/hotlooks",
             "productdata.load.url":"<?php echo $config['productdata.load.url'] ?>",
-            "client.starting.revolving":"Quando voc\u00EA menos esperar...terminaremos de carregar...\/Carregando mensagem divertida! Por favor espere.\/Voc\u00EA quer batatas fritas para acompanhar?\/Siga o pato amarelo.\/O tempo \u00E9 apenas uma ilus\u00E3o.\/J\u00E1 chegamos?!\/Eu gosto da sua camiseta.\/Olhe para um lado. Olhe para o outro. Pisque duas vezes. Pronto!\/N\u00E3o \u00E9 voc\u00EA, sou eu.\/Shhh! Estou tentando pensar aqui.\/Carregando o universo de pixels.",
+            "client.starting.revolving":"When you least expect it... we'll finish loading...\/Loading fun message! Please wait.\/Do you want fries to go with them??\/Follow the yellow duck.\/The weather it's only an illusion.\/We've arrived!\/I like your shirt.\/Look to one side. Look the other way. Blink twice. That's it!\/No you, it's me.\/Shhh! I'm trying to think here.\/Loading the pixel universe.",
             "external.override.variables.txt":"<?php echo $config['external.override.variables.txt'] ?>",
             "spaweb":"1",
             "supersonic_application_key":"2c63c535",

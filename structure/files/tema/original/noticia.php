@@ -25,7 +25,7 @@ include 'header.php';
         <div class="row justify-content-md-center">
             <div class="col-md-3">
                 <div class="list-group">
-                    <div class="list-group-item list-header">Últimas Notícias</div>
+                    <div class="list-group-item list-header">Latest News</div>
 
                     <?php
 
@@ -89,10 +89,10 @@ while ($row22 = $query12->fetch_assoc()) {
                                 <div class="article-author">
                                    <b>Autor:</b> <b><a href="/perfil?=<?php echo $row3['author'] ?>"><?php echo $row3['author'] ?> </a></b>
                                     <br>
-                                    <b>Data:</b>
-                                    <?php echo date('d/m/Y', $row3['date']) . ' às ' . date('H:i:s', $row3['date']) ?>
+                                    <b>Date:</b>
+                                    <?php echo date('d/m/Y', $row3['date']) . ' at ' . date('H:i:s', $row3['date']) ?>
                                     <br>
-                                    <b>Visualizações:</b>
+                                    <b>Views:</b>
                                     <?php echo $row3['type'] ?>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ if ($cur != null || $sessao != null || usuario != null)
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Comentar em <?php echo $row3['title'] ?></h5>
+        <h5 class="modal-title" id="exampleModalLabel">Comment on <?php echo $row3['title'] ?></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -133,8 +133,8 @@ if ($cur != null || $sessao != null || usuario != null)
         <input hidden="" type="text" value="<?php echo $row3['id'] ?>" name="id">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="submit" name="comentar" class="btn btn-primary">Comentar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button style="cursor: pointer;" type="submit" name="comentar" class="btn btn-primary">Comment</button>
         </form>
       </div>
     </div>
@@ -143,8 +143,8 @@ if ($cur != null || $sessao != null || usuario != null)
 
                 <div class="card" style="width: 560px;">
 
-                            <div class="list-group-item list-header">Comentários
-                            <span data-toggle="modal" data-target="#exampleModal" style="float: right;" class="badge badge-light">Comentar</span>
+                            <div class="list-group-item list-header">Comments
+                            <span data-toggle="modal" data-target="#exampleModal" style="float: right;cursor: pointer;" class="badge badge-light">Comment</span>
                             </div>
                             <div class="card-body">
                                 <?php
@@ -205,20 +205,38 @@ while ($bss = $aa->fetch_assoc()) {
 <br>
 <br>
 <br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
 <br>
     <style type="text/css">
         .salsa {
             height: 380px;
         }
     </style>
-    <div class="salsa"></div>
-    <div style="font-weight: 14px;background: #1e262c; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
-        <div class="container">
+    <div style="font-weight: 14px;background: #1e262c; color: #fff; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 10px">
+        <div>
+            <b><?php echo nome ?> Hotel 2022</b> powered by <b><a style="color: #fff; text-decoration: underline" href="https://github.com/retrokey/" target="_blank">SalsaCMS 2.0</a></b>
+        </div>
+        <div class="d-flex" style="gap: 10px; font-size: 12px">
+            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Privacy Policy</a>
+            <div style="color: #a7a7a7;">|</div>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Terms and Conditions of Use</a>
+        </div>
+    </div>
+</div>
 
-            <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
-             
-                                                    </span>
+    <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>
+        <div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;">
+
         </div>
     </div>
 

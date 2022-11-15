@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/uRUsL19.png">
 
-    <title>Página Inicial</title>
+    <title>Home Page</title>
 
     <meta name="keywords" content="habbinc, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
     <meta name="robots" content="all">
@@ -705,13 +705,13 @@
 
     function getTimeAgo(time) {
         var units = [
-            {name: "segundo", limit: 60, in_seconds: 1},
-            {name: "minuto", limit: 3600, in_seconds: 60},
-            {name: "hora", limit: 86400, in_seconds: 3600},
-            {name: "dia", limit: 604800, in_seconds: 86400},
-            {name: "semana", limit: 2629743, in_seconds: 604800},
-            {name: "mês", limit: 31556926, in_seconds: 2629743},
-            {name: "ano", limit: null, in_seconds: 31556926}
+            {name: "seconds", limit: 60, in_seconds: 1},
+            {name: "minute", limit: 3600, in_seconds: 60},
+            {name: "hour", limit: 86400, in_seconds: 3600},
+            {name: "day", limit: 604800, in_seconds: 86400},
+            {name: "week", limit: 2629743, in_seconds: 604800},
+            {name: "month", limit: 31556926, in_seconds: 2629743},
+            {name: "year", limit: null, in_seconds: 31556926}
         ];
         var diff = (new Date() - new Date(time * 1000)) / 1000;
         var isAgo = true;
@@ -720,16 +720,16 @@
             isAgo = false;
 
         if (diff < 5)
-            return "agora";
+            return "now";
         var i = 0, unit;
         while (unit = units[i++]) {
             if (diff < unit.limit || !unit.limit) {
                 var diff = Math.floor(diff / unit.in_seconds);
 
                 if(i == 6)
-                    return diff + " " + (diff > 1 ? "meses" : "mês") + (isAgo ? " atrás" : "");
+                    return diff + " " + (diff > 1 ? "months" : "month") + (isAgo ? " back" : "");
                 else
-                    return diff + " " + unit.name + (diff > 1 ? "s" : "") + (isAgo ? " atrás" : "");
+                    return diff + " " + unit.name + (diff > 1 ? "s" : "") + (isAgo ? " brack" : "");
             }
         }
         ;
@@ -747,25 +747,25 @@
     app.filter('timeAgo', [function ($sce) {
         return function (time) {
             var units = [
-                {name: "segundo", limit: 60, in_seconds: 1},
-                {name: "minuto", limit: 3600, in_seconds: 60},
-                {name: "hora", limit: 86400, in_seconds: 3600},
-                {name: "dia", limit: 604800, in_seconds: 86400},
-                {name: "semana", limit: 2629743, in_seconds: 604800},
-                {name: "mês", limit: 31556926, in_seconds: 2629743},
-                {name: "ano", limit: null, in_seconds: 31556926}
+                {name: "seconds", limit: 60, in_seconds: 1},
+                {name: "minute", limit: 3600, in_seconds: 60},
+                {name: "hour", limit: 86400, in_seconds: 3600},
+                {name: "day", limit: 604800, in_seconds: 86400},
+                {name: "week", limit: 2629743, in_seconds: 604800},
+                {name: "month", limit: 31556926, in_seconds: 2629743},
+                {name: "year", limit: null, in_seconds: 31556926}
             ];
             var diff = (new Date() - new Date(time * 1000)) / 1000;
             if (diff < 5)
-                return "agora";
+                return "now";
             var i = 0, unit;
             while (unit = units[i++]) {
                 if (diff < unit.limit || !unit.limit) {
                     var diff = Math.floor(diff / unit.in_seconds);
                     if(i == 6)
-                        return diff + " " + (diff > 1 ? "meses" : "mês") + " atrás";
+                        return diff + " " + (diff > 1 ? "month" : "months") + " back";
                     else
-                        return diff + " " + unit.name + (diff > 1 ? "s" : "") + " atrás";
+                        return diff + " " + unit.name + (diff > 1 ? "s" : "") + " back";
                 }
             }
             ;
@@ -808,12 +808,12 @@
 
         var notificationsController = app.controller('notificationsController', function ($scope, $http, $interval, $timeout, $window) {
         $scope.type2 = [];
-        $scope.type2[1] = "curtiu sua";
-        $scope.type2[2] = "comentou sua";
-        $scope.type2[3] = "compartilhou sua";
-        $scope.type2[4] = "mencionou você em uma";
-        $scope.type2[6] = "curtiu seu comentário na";
-        $scope.type2[7] = "publicou uma";
+        $scope.type2[1] = "enjoyed your";
+        $scope.type2[2] = "commented his";
+        $scope.type2[3] = "shared his";
+        $scope.type2[4] = "mentioned you in a";
+        $scope.type2[6] = "liked your comment on";
+        $scope.type2[7] = "published a";
 
         $scope.lastId = 0;
         $scope.newNotificationsCount = 0;
@@ -904,8 +904,8 @@
 <body ng-app="formApp" class="animated fadeIn ng-scope"><div id="sound"></div>
 
 <div class="cookies-warning animated bounce">
-    <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> Nós utilizamos cookies para melhorar a sua experiência aqui dentro. Ao continuar utilizando nosso site você está de acordo com isso.
-    <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">OK?</span>
+    <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> We use cookies to improve your experience here. By continuing to use our site you agree to this.
+    <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">Accept</span>
 </div>
 <div id="master-topbg" ng-controller="gameHeaderController" class="ng-scope">
     <div class="container">
@@ -947,10 +947,10 @@
                         <a class="nav-link dropdown-toggle" href="https://habbinc.net/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user"></i> programmer                        </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="https://habbinc.net/me">Página Inicial</a>
-                            <a class="dropdown-item" href="https://habbinc.net/configs">Configurações</a>
+                            <a class="dropdown-item" href="https://habbinc.net/me">Home Page</a>
+                            <a class="dropdown-item" href="https://habbinc.net/configs">Settings</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="https://habbinc.net/logout">Sair</a>
+                            <a class="dropdown-item" href="https://habbinc.net/logout">Go to</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown ">
@@ -1020,19 +1020,19 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Notificações</h5>
+                    <h5 class="modal-title">Notifications</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body" style="padding: 0">
                     <div class="list-group">
-                        <div class="list-group-item" style="text-align: center" ng-show="notifications.length == 0">Tudo limpo por aqui!</div>
+                        <div class="list-group-item" style="text-align: center" ng-show="notifications.length == 0">All clear here!</div>
                         <!-- ngRepeat: notification in notifications| orderBy:'-id' track by $index -->
                     </div>
                 </div>
                 <div class="modal-footer ng-hide" ng-show="notifications.length &gt; 0">
-                    <button type="button" class="btn btn-primary" ng-click="clearNotifications()">Limpar notificações</button>
+                    <button type="button" class="btn btn-primary" ng-click="clearNotifications()">Clear notifications</button>
                 </div>
             </div>
         </div>

@@ -902,8 +902,8 @@
     <div id="sound"></div>
 
     <div class="cookies-warning animated bounce">
-        <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> Nós utilizamos cookies para melhorar a sua experiência aqui dentro. Ao continuar utilizando nosso site você está de acordo com isso.
-        <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">OK?</span>
+        <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> We use cookies to improve your experience here. By continuing to use our site you agree to this.
+        <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">Accept</span>
     </div>
     <div id="master-topbg" ng-controller="gameHeaderController" class="ng-scope">
         <div class="container">
@@ -947,9 +947,9 @@
                                 <?php echo $cur ?>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/me">Página Inicial</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/perfil?=<?php echo usuario ?>">Meu perfil</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/configs">Configurações</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/me">Home Page</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/perfil?=<?php echo usuario ?>">My Profile</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/configs">Settings</a>
                                 <div class="dropdown-divider"></div>
                                  <?php
                                 if ($rank >= rmin)
@@ -957,18 +957,18 @@
                                     ?>
                                 
 
-                         <a class="dropdown-item" href="<?php echo url ?>/panel">Painel de Controle</a>
+                         <a class="dropdown-item" href="<?php echo url ?>/panel">Housekeeping</a>
                             <?php } ?>
-                                <a class="dropdown-item" href="<?php echo url ?>/sair">Sair</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/sair">Log Out</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-plus"></i> Comunidade
+                                <i class="fas fa-plus"></i> Community
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipes</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/vips">Usuários VIPs</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/staff">Staff Team</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/vips">VIP's Users</a>
                                 <div class="dropdown-divider"></div>
                                 
                                 <a class="dropdown-item" href="<?php echo url ?>/discord">Discord</a>
@@ -979,7 +979,7 @@
                         
                           <li class="nav-item">
                             <a class="nav-link" href="<?php echo url ?>/hall" id="navbar" role="button" data-toggle="" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-star"></i> Hall
+                                <i class="fas fa-star"></i> Hall of Fame
                             </a>
                             
                         </li>
@@ -993,30 +993,30 @@
                         
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-newspaper"></i> Jornalismo
+                                <i class="fas fa-newspaper"></i> Journalism
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php
                                 $sql4 = "SELECT * FROM cms_news order by id DESC LIMIT 1";
                                 $query2 = mysqli_query($conn, $sql4) or die(mysqli_error($conn));
                                 while ($row4 = $query2->fetch_assoc()) { ?>
-                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">Notícias Publicadas</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">News</a>
 
                             <?php } ?>
 
-                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Promoções ativas</a>
+                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Active Promotions</a>
                               
                             </div>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-gem"></i> Loja
+                                <i class="fas fa-gem"></i> Shop
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/store">Produtos</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/store">Products</a>
                                 <div class="dropdown-divider"></div>
                                 
-                                <a class="dropdown-item" href="<?php echo url ?>/vip">Conheça o VIP</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/vip">Meet VIP</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -1031,7 +1031,7 @@
                         
                         <li class="nav-item ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="https://discord.gg/4ra8n2A3dV">
+                                <a class="nav-link" href="<?php echo discord ?>">
                                     <i class="fab fa-discord" style="font-size: 20px"></i>
                                 </a>
                             </li>
@@ -1041,7 +1041,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo url ?>/client" target="_blank"><i class="far fa-building"></i> Entrar no Hotel</a>
+                                    <a class="nav-link" href="<?php echo url ?>/client" target="_blank"><i class="far fa-building"></i> Enter the Hotel</a>
                                 </li>
                         </li>
                     </ul>
@@ -1052,19 +1052,19 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Notificações</h5>
+                        <h5 class="modal-title">Notifications</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body" style="padding: 0">
                         <div class="list-group">
-                            <div class="list-group-item" style="text-align: center" ng-show="notifications.length == 0">Tudo limpo por aqui!</div>
+                            <div class="list-group-item" style="text-align: center" ng-show="notifications.length == 0">All clear here!</div>
                             <!-- ngRepeat: notification in notifications| orderBy:'-id' track by $index -->
                         </div>
                     </div>
                     <div class="modal-footer ng-hide" ng-show="notifications.length &gt; 0">
-                        <button type="button" class="btn btn-primary" ng-click="clearNotifications()">Limpar notificações</button>
+                        <button type="button" class="btn btn-primary" ng-click="clearNotifications()">Clear notifications</button>
                     </div>
                 </div>
             </div>

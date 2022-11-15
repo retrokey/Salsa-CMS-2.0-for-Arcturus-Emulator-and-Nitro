@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Dar cargo para um usuário";
-    $desc = "Essa função permite você dê um cargo especifico para um usuário.";
+    $titulo = "Give a rank";
+    $desc = "This function allows you to give a specific role to a user.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -27,15 +27,17 @@
 <body>
     <?php
     if (rank == 5)
-        $salsarank = "Moderador";
+        $salsarank = "Moderator";
+    if (rank == 6)
+        $salsarank = "Game Master";
     if (rank == 7)
-        $salsarank = "Administrador";
+        $salsarank = "Administrator";
     if (rank == 8)
-        $salsarank = "Gerente";
+        $salsarank = "Manager";
     if (rank == 9)
         $salsarank = "CEO";
     if (rank == 10)
-        $salsarank = "Fundador";
+        $salsarank = "Founder";
     ?>
 <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
     <div class="app-header header-shadow">
@@ -438,22 +440,22 @@
     <div class="col-sm-12">
          <?php SalsaPainel::dar_cargo($conn) ?>
                                 <form method="post">
-                                    <label>Nome do usuário que receberá o cargo:</label>
+                                    <label>Name of the user who will receive the post:</label>
                                     <br>
                                     <input class="form-control" type="text" name="vlr1" required="">
-                                    <label>Selecione o cargo:</label>
+                                    <label>Select the rank:</label>
                                     <br>
                                     <select class="form-control" name="vlr2">
-                                        <option value="1">Usuário (1)</option>
+                                        <option value="1">User (1)</option>
                                         <option value="2">VIP (2)</option>
-                                        <option value="3">VIP II (3)</option>
-                                        <option value="4">Embaixador (4)</option>
-                                        <option value="5">Moderador (5)</option>
-                                        <option value="6">SModerador (6)</option>
-                                        <option value="7">Administrador (7)</option>
-                                        <option value="8">Gerente (8)</option>
+                                        <option value="3">BaW (3)</option>
+                                        <option value="4">Guardian (4)</option>
+                                        <option value="5">Ambassador (5)</option>
+                                        <option value="6">Moderator (6)</option>
+                                        <option value="7">Administrator (7)</option>
+                                        <option value="8">Manager (8)</option>
                                         <option value="9">CEO (9)</option>
-                                        <option value="10">Fundador (10)</option>
+                                        <option value="10">Founder (10)</option>
                                     </select>
                                   
                                     

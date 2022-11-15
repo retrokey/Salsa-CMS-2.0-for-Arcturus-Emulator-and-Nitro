@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <?php include 'salsa-sessao.php' ?>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Banir";
-    $desc = "Essa função permite você punir um usuário por um tempo determinado.";
+    $titulo = "Ban";
+    $desc = "This function allows you to punish a user for a certain time.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -505,15 +505,17 @@
 <body>
     <?php
     if (rank == 5)
-        $salsarank = "Moderador";
+        $salsarank = "Moderator";
+    if (rank == 6)
+        $salsarank = "Game Master";
     if (rank == 7)
-        $salsarank = "Administrador";
+        $salsarank = "Administrator";
     if (rank == 8)
-        $salsarank = "Gerente";
+        $salsarank = "Manager";
     if (rank == 9)
         $salsarank = "CEO";
     if (rank == 10)
-        $salsarank = "Fundador";
+        $salsarank = "Founder";
     ?>
 <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
     <div class="app-header header-shadow">
@@ -1582,17 +1584,17 @@
     <div class="col-sm-12">
        <?php SalsaPainel::banir_usuario($conn) ?>
                                 <form method="post">
-                                    <label>Nome do usuário:</label>
+                                    <label>User name:</label>
                                     <br>
                                     <input class="form-control" type="text" name="vlr1" required="">
                                     <br>
-                                    <label>Razão do banimento</label>
+                                    <label>Reason for the ban</label>
                                     <input class="form-control" type="text" name="vlr2" required="">
                                     <br>
-                                    <label>Tempo que ficará banido em dias: (25)</label>
+                                    <label>Time will be banned in days: (25)</label>
                                     <input class="form-control" type="text" name="vlr3" required="">
                                     <br>
-                                    <input value="Banir" class="btn btn-success" type="submit" name="fnvlr">
+                                    <input value="Ban" class="btn btn-success" type="submit" name="fnvlr">
                                 </form>
     </div>
     

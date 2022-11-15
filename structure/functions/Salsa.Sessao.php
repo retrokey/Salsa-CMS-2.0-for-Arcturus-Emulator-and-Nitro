@@ -52,6 +52,9 @@ if (isset($_SESSION['usuario']) && isset($_SESSION['senha'])) {
             case '/client':
                 header("Location: /");
             break;
+            case '/react':
+                header("Location: /");
+            break;
             case '/produtos':
                 header("Location: /");
             break;
@@ -98,6 +101,9 @@ if (isset($_SESSION['usuario']) && isset($sessao)) {
             header("Location: /");
         break;
         case '/client':
+            header("Location: /");
+        break;
+        case '/react':
             header("Location: /");
         break;
         case '/produtos':

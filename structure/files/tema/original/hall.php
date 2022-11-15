@@ -1,5 +1,5 @@
 <?php
-$titulo = "".usuario.":  Hall da Fama - ".nome."";
+$titulo = "".usuario.":  Hall of Fame - ".nome."";
 include 'header.php';
 ?>
 
@@ -8,7 +8,7 @@ include 'header.php';
         <div class="col-md-4">
             <div class="list-group">
 
-                <div class="list-group-item list-header">Promoções</div>
+                <div class="list-group-item list-header">Promotions</div>
                 
                 <div class="list-group-item podium" style="background: url(https://i.imgur.com/rQR45xY.png) -420px -70px;">
                 <?php
@@ -48,12 +48,12 @@ include 'header.php';
                             {
 
                                 ?>
-                            Ganhou <b><?php echo $row2['pontos_promocao'] ?></b> promoção.
+                            He won <b><?php echo $row2['pontos_promocao'] ?></b> promotion.
 
 
                         <?php }elseif ($row2['pontos_promocao'] > 1) {
                           ?>
-  Ganhou <b><?php echo $row2['pontos_promocao'] ?></b> promoções.
+  Ganhou <b><?php echo $row2['pontos_promocao'] ?></b> promotions.
                           <?php
                         } ?>
                         </div>
@@ -70,7 +70,7 @@ include 'header.php';
         </div>
         <div class="col-md-4">
             <div class="list-group">
-                <div class="list-group-item list-header">Eventos</div>
+                <div class="list-group-item list-header">Events</div>
                 <div class="list-group-item podium" style="background: url(https://i.imgur.com/Fk1LArz.png) right top;">
                 <?php
                                 $sql3 = "SELECT * FROM users ORDER BY pontos_evento DESC LIMIT 1";
@@ -108,12 +108,12 @@ include 'header.php';
                             {
 
                                 ?>
-                            Ganhou <b><?php echo $row2['pontos_evento'] ?></b> evento.
+                            He won <b><?php echo $row2['pontos_evento'] ?></b> events.
 
 
                         <?php }elseif ($row2['pontos_evento'] > 1) {
                           ?>
-  Ganhou <b><?php echo $row2['pontos_evento'] ?></b> eventos.
+  Ganhou <b><?php echo $row2['pontos_evento'] ?></b> event.
                           <?php
                         } ?>
 
@@ -129,7 +129,7 @@ include 'header.php';
         </div>
         <div class="col-md-4">
             <div class="list-group">
-                <div class="list-group-item list-header">Créditos</div>
+                <div class="list-group-item list-header">Credits</div>
                 <div class="list-group-item podium" style="background: url(https://i.imgur.com/4r7hVFB.png) right center;">
                 <?php
                                 $sql3 = "SELECT * FROM users ORDER BY credits DESC LIMIT 1";
@@ -168,12 +168,12 @@ include 'header.php';
                             {
 
                                 ?>
-                            Possui <b><?php echo $row2['credits'] ?></b> crédito.
+                            It have <b><?php echo $row2['credits'] ?></b> credits.
 
 
                         <?php }elseif ($row2['credits'] > 1) {
                           ?>
-  Possui <b><?php echo $row2['credits'] ?></b> créditos.
+  It have <b><?php echo $row2['credits'] ?></b> credits.
                           <?php
                         } ?>
                         </div>
@@ -188,7 +188,7 @@ include 'header.php';
     
         <div class="col-md-4"><br>
             <div class="list-group">
-                <div class="list-group-item list-header">Referidos</div>
+                <div class="list-group-item list-header">Referrals</div>
                 <div class="list-group-item podium" style="background: url(https://2.bp.blogspot.com/-R6cz67_kMUA/VvDawXZCHWI/AAAAAAAAlzw/Aqgvb2JywjIdt6qOAe_wfQ0H1ERjdgGAw/s1600/habboios.png) right top;">
                 <?php
                                 $sql3 = "SELECT * FROM users ORDER BY referidos DESC LIMIT 1";
@@ -227,12 +227,12 @@ include 'header.php';
                             {
 
                                 ?>
-                            Ganhou <b><?php echo $row2['referidos'] ?></b> promoção.
+                            He have <b><?php echo $row2['referidos'] ?></b> Referrals.
 
 
                         <?php }elseif ($row2['referidos'] > 1) {
                           ?>
-  Colecionou <b><?php echo $row2['referidos'] ?></b> referidos.
+  Collected <b><?php echo $row2['referidos'] ?></b> referrerals.
                           <?php
                         } ?>
                         </div>
@@ -294,12 +294,12 @@ include 'header.php';
                             {
 
                                 ?>
-                            Possui <b><?php echo $row2['pixels'] ?></b> ducket.
+                            Have <b><?php echo $row2['pixels'] ?></b> ducket.
 
 
                         <?php }elseif ($row2['pixels'] > 1) {
                           ?>
-  Possui <b><?php echo $row2['pixels'] ?></b> duckets.
+  He have <b><?php echo $row2['pixels'] ?></b> duckets.
                           <?php
                         } ?>
                         </div>

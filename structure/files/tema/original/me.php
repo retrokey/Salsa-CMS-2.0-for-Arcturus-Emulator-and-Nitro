@@ -22,9 +22,9 @@ include 'header.php' ?>
 
                         </div>
                     </div>
-                    <div onclick="window.open(&#39;/client&#39;, &#39;_blank&#39;);" class="panel-footer client-btn">Jogar com Flash
+                    <div onclick="window.open(&#39;/client&#39;, &#39;_blank&#39;);" class="panel-footer client-btn">Play with Flash
                     </div>
-                    <div onclick="window.open(&#39;/react&#39;, &#39;_blank&#39;);" class="panel-footer client-btn" style="width:100%">Jogar com Nitro <img src="https://i.imgur.com/lZWES30.png"></div>
+                    <div onclick="window.open(&#39;/react&#39;, &#39;_blank&#39;);" class="panel-footer client-btn" style="width:100%">Playing with Nitro <img src="https://i.imgur.com/lZWES30.png"></div>
 
 
                 </div>
@@ -51,14 +51,14 @@ include 'header.php' ?>
                                     <div class="feed-item-body">
                                         <div class="feed-item-title"></div>
                                         <div class="feed-item-content">
-                                            <textarea required="" class="form-control ng-pristine ng-untouched ng-valid ng-empty" style="margin-bottom: 10px" name="postagem" rows="1" placeholder="No que você está pensando?"></textarea>
+                                            <textarea required="" class="form-control ng-pristine ng-untouched ng-valid ng-empty" style="margin-bottom: 10px" name="postagem" rows="1" placeholder="What you are thinking?"></textarea>
 
                                         </div>
                                         
 
                                         <button name="postar" type="submit" class="btn btn-primary" style="float: right">
 
-                                            <span class="">Publicar</span>
+                                            <span class="">Publish</span>
                                         </button>
 
                                     </div>
@@ -82,7 +82,7 @@ include 'header.php' ?>
                                         <div class="feed-item-image" style="background-image: url(<?php echo avatarimage ?><?php echo $row77['look'] ?>&size=m&headonly=1&head_direction=2&gesture=sml)"></div>
                                         <div class="feed-item-body">
                                             <div class="feed-item-timestamp ng-binding">
-                                                <?php echo date('d/m/Y', $row['data']) . ' às ' . date('H:i:s', $row['data']) ?> <a href="javascript:void(0);" ng-click="deletePost(post)" ng-show="post.userid == 7702964" title="Apagar Publicação" style="color: #f44336" class="ng-hide"><i class="fas fa-times-circle"></i></a></div>
+                                                <?php echo date('d/m/Y', $row['data']) . ' at ' . date('H:i:s', $row['data']) ?> <a href="javascript:void(0);" ng-click="deletePost(post)" ng-show="post.userid == 7702964" title="Delete Publication" style="color: #f44336" class="ng-hide"><i class="fas fa-times-circle"></i></a></div>
                                             <div class="feed-item-title">
                                                 <a href="perfil?=<?php echo $row['usuario'] ?>" class="ng-binding">
                                                     <?php echo $row['usuario'] ?>
@@ -93,7 +93,7 @@ include 'header.php' ?>
                                         if ($row['staff'] == 1)
                                         {
                                             ?>
-                                                    <b>fez uma publicação staff</b>  <i class="fas fa-exclamation-triangle"></i>
+                                                    <b>made a staff posting</b>  <i class="fas fa-exclamation-triangle"></i>
                                             <?php } ?>
 
                                     </div>
@@ -147,7 +147,7 @@ include 'header.php' ?>
                                             </span>
 
     <button style="color: white;" onclick="salsa<?php echo $row['id'] ?>();" id="contasalsa" class="btn btn-primary" type="submit" name="curtidas">
-        Curtir
+        Like
     <i class="far fa-thumbs-up"></i> 
 </button>
 
@@ -158,19 +158,19 @@ include 'header.php' ?>
 
 
 
-                                        <a href="/post/430745" style="float:right" title="Abrir em nova guia"><i class="fas fa-share-alt"></i></a>
+                                        <a href="/post/430745" style="float:right" title="Open in new tab"><i class="fas fa-share-alt"></i></a>
                                     </div>
                                     <ul class="list-group" style="margin-top: 10px; display: none" id="commentsPost430745">
                                         <!-- ngRepeat: comment in postComments[post.id] -->
                                         <li class="list-group-item feed-item animated fadeIn">
-                                            <div class="feed-item-image" style="height:50px;background-image: url(https://habbinc.net/avatar/programmer/size=m&amp;headonly=1&amp;head_direction=2&amp;gesture=sml)"></div>
+                                            <div class="feed-item-image" style="height:50px;background-image: url(https://ironhotel.biz/avatar/programmer/size=m&amp;headonly=1&amp;head_direction=2&amp;gesture=sml)"></div>
                                             <div class="feed-item-body">
                                                 <div class="feed-item-content commenting">
                                                     <form ng-submit="postComment(post)" id="formComment430745" class="ng-pristine ng-valid">
                                                         <div class="input-group">
-                                                            <input id="inputCommentPostId430745" ng-model="postComment.commentMessage[post.id]" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Comentando...">
+                                                            <input id="inputCommentPostId430745" ng-model="postComment.commentMessage[post.id]" type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Commenting...">
                                                             <div class="input-group-append">
-                                                                <button type="submit" class="btn btn-primary" ng-disabled="!postComment.commentMessage[post.id].length > 0" style="font-size: 13px" disabled="disabled">Enviar</button>
+                                                                <button type="submit" class="btn btn-primary" ng-disabled="!postComment.commentMessage[post.id].length > 0" style="font-size: 13px" disabled="disabled">Send</button>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -183,19 +183,19 @@ include 'header.php' ?>
                         </li>
                     <?php } } ?>
                         <li class="list-group-item animated fadeInDown updateFeedBtn ng-hide" ng-click="loadNewPosts()" ng-show="newPostsCount &gt; 0 &amp;&amp; loading === false">
-                            Carregar novos posts
+                            Upload new posts
                         </li>
                      
                         <div id="feedScrollspy" class="d-none d-lg-block" style="height: 1px"></div>
                         <li class="list-group-item updateFeedBtn d-block d-lg-none" ng-click="loadOldPosts()">
-                            Carregar mais posts
+                            Upload more posts
                         </li>
                     </ul>
                     <div class="modal fade" id="sharePostModal" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Retweetar Publicação</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Retweet Post</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">×</span>
                                     </button>
@@ -242,7 +242,7 @@ include 'header.php' ?>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                         <button type="submit" class="btn btn-primary" ng-disabled="sharePost.message.length &lt; 1 || sharePost.message == null || postingStatus === true" disabled="disabled">Retweetar</button>
                                     </div>
                                 </form>
@@ -256,7 +256,7 @@ include 'header.php' ?>
             <div class="card" style="margin-bottom: 10px">
                     <div class="card-body">
                         <div class="input-group">
-                            <input type="text" placeholder="Pesquisar Usuário" class="form-control" id="user-search">
+                            <input type="text" placeholder="Search User" class="form-control" id="user-search">
                             <div class="input-group-prepend">
                                 <button class="btn btn-primary btn-sm" style="border-top-right-radius:4px; border-bottom-right-radius:4px" onclick="searchUser()"><i class="fas fa-search"></i></button>
                             </div>
@@ -320,7 +320,7 @@ include 'header.php' ?>
 
 
                 <div class="panel panel-success">
-    <div class="list-group-item list-header">TOP 5 Moedas</div>
+    <div class="list-group-item list-header">TOP 5 Currencies</div>
           
     <div class="list-group">
         
@@ -362,18 +362,18 @@ include 'header.php' ?>
 
     <div class="panel panel-primary">
     <div class="panel-heading">
-         <div class="list-group-item list-header">Referidos</div>
+         <div class="list-group-item list-header">Referrals</div>
     </div>
 
       <div class="list-group-item config-controller open" data-target="#config">
             
-        Você possui <b><?php echo $referidos ?></b> referidos.<br>
+      You own <b><?php echo $referidos ?></b> referrals.<br>
         
-        <p>Chame novas pessoas para o hotel usando o seu link de referencia e ganhe de 1 a 2 tickets a cada novo cadastro.</p>
+        <p>Refer new people to the hotel using your referral link and earn 1 to 2 tickets with each new registration.</p>
 
         <div class="form-group">
             <form class="ng-pristine ng-valid">
-                <small>Link de referencia:</small>
+                <small>Link for reference:</small>
                 <input type="text" onclick="this.select();" class="form-control" value="<?php echo url ?>/convite?=<?php echo usuario ?>" readonly="readonly"> 
             </form>
         </div>
@@ -388,15 +388,26 @@ include 'header.php' ?>
         </div>
     </div>
 
-    <div style="font-weight: 14px;background: #1e262c; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
-        <div class="container">
+    
+    <div style="font-weight: 14px;background: #1e262c; color: #fff; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 10px">
+        <div>
+            <b><?php echo nome ?> Hotel 2022</b> powered by <b><a style="color: #fff; text-decoration: underline" href="https://github.com/retrokey/" target="_blank">SalsaCMS 2.0</a></b>
+        </div>
+        <div class="d-flex" style="gap: 10px; font-size: 12px">
+            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Privacy Policy</a>
+            <div style="color: #a7a7a7;">|</div>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Terms and Conditions of Use</a>
+        </div>
+    </div>
+</div>
 
-            <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
-             
-                                                    </span>
-                                            </div>
-                                        </div>
+    <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>
+        <div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;">
+
+        </div>
+    </div>
 
 </body>
 

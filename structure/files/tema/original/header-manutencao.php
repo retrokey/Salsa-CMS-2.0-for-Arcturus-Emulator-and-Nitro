@@ -775,24 +775,24 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login para membros da equipe</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Login for team members</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <form method="post">
-            <label>Nome de usuário:</label><br>
+            <label>User name:</label><br>
             <input class="form-control" type="text" name="usuario_salsa" required="">
             <br>
-            <label>Senha:</label><br>
+            <label>Password:</label><br>
             <input class="form-control" type="password" name="senha_salsa" required="">
             <br>
-            <input value="Entrar" type="submit" class="btn btn-primary" name="conectar">
+            <input value="Enter" type="submit" class="btn btn-primary" name="conectar">
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         
       </div>
     </div>
@@ -830,19 +830,19 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Notificações</h5>
+                        <h5 class="modal-title">Notifications</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <div class="modal-body" style="padding: 0">
                         <div class="list-group">
-                            <div class="list-group-item" style="text-align: center" ng-show="notifications.length == 0">Tudo limpo por aqui!</div>
+                            <div class="list-group-item" style="text-align: center" ng-show="notifications.length == 0">All clear over here!</div>
                             <!-- ngRepeat: notification in notifications| orderBy:'-id' track by $index -->
                         </div>
                     </div>
                     <div class="modal-footer ng-hide" ng-show="notifications.length &gt; 0">
-                        <button type="button" class="btn btn-primary" ng-click="clearNotifications()">Limpar notificações</button>
+                        <button type="button" class="btn btn-primary" ng-click="clearNotifications()">Clear notifications</button>
                     </div>
                 </div>
             </div>

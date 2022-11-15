@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <?php include 'salsa-sessao.php' ?>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Início do Painel de controle";
-    $desc = "Bem vindo! Você está na página inicial do Painel.";
+    $titulo = "Start of the Control Panel";
+    $desc = "Welcome to the Panel! You are now on the Dashboard homepage.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">

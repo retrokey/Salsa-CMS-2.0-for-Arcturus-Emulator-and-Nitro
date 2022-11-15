@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Desbanir";
-    $desc = "Essa função permite você remova a punição de um usuário.";
+    $titulo = "Unban";
+    $desc = "This function allows you to remove the punishment from a user.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -1582,13 +1582,13 @@
     <div class="col-sm-12">
         <?php SalsaPainel::desbanir_usuario($conn) ?>
                                 <form method="post">
-                                    <label>Nome do usuário que será desbanido:</label>
+                                    <label>Name of the user who will be unbanned:</label>
                                     <br>
                                     <input class="form-control" type="text" name="vlr1" required="">
                                  
                                     
                                     <br>
-                                    <input value="Desbanir" class="btn btn-success" type="submit" name="fnvlr">
+                                    <input value="Unban" class="btn btn-success" type="submit" name="fnvlr">
                                 </form>
     </div>
     

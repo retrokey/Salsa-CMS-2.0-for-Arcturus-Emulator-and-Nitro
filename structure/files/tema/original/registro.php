@@ -35,7 +35,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/uRUsL19.png">
 
     <title>
-        <?php echo nome ?> - Criar um avatar</title>
+        <?php echo nome ?> - Create an avatar</title>
 
     <meta name="keywords" content="<?php echo nome ?>, habblet, habblethotel, habblive, habb, lella, lellahotel,lella hotel, habbinfo, habbinfo hotel, habblive, habblive hotel, habbolatino, habbletlatino, habblet, habblethotel, crazzy, habb, habbhotel , furnis , mobs, client, cliente, client hotel, clienthotel, atualizado, catalogo">
     <meta name="robots" content="all">
@@ -886,8 +886,8 @@
     <div id="sound"></div>
 
     <div class="cookies-warning animated bounce">
-        <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> Nós utilizamos cookies para melhorar a sua experiência aqui dentro. Ao continuar utilizando nosso site você está de acordo com isso.
-        <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">OK?</span>
+        <i class="fas fa-exclamation-triangle" style="font-size: 20px; float: left; margin-right: 20px"></i> We use cookies to improve your experience here. By continuing to use our site you agree to this.
+        <span style="float: right; color: rgba(255, 255, 255, .8); font-size: 18px">Accept</span>
     </div>
     <div id="master-topbg" ng-controller="gameHeaderController" class="ng-scope">
         <div class="container">
@@ -925,19 +925,19 @@
             <div class="container">
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav w-100">
-                        <li class="nav-item  active">
-                            <a class="nav-link" href="<?php echo url ?>/index">Início</a>
-                        </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="<?php echo url ?>/registro">Registre-se</a>
+                            <a class="nav-link" href="<?php echo url ?>/index">Index</a>
+                        </li>
+                        <li class="nav-item  active">
+                            <a class="nav-link" href="<?php echo url ?>/registro">Register</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-plus"></i> Comunidade
+                                <i class="fas fa-plus"></i> Community
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="<?php echo url ?>/staff">Equipes</a>
-                                <a class="dropdown-item" href="<?php echo url ?>/vips">Usuários VIPs</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/staff">Staff Team</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/vips">VIP's Users</a>
                                 <div class="dropdown-divider"></div>
                                 
                                 <a class="dropdown-item" href="<?php echo url ?>/discord">Discord</a>
@@ -946,18 +946,18 @@
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="<?php echo url ?>/me#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i></i> Jornalismo
+                                <i></i> Journalism
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <?php
                                 $sql4 = "SELECT * FROM cms_news order by id DESC LIMIT 1";
                                 $query2 = mysqli_query($conn, $sql4) or die(mysqli_error($conn));
                                 while ($row4 = $query2->fetch_assoc()) { ?>
-                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">Notícias Publicadas</a>
+                                <a class="dropdown-item" href="<?php echo url ?>/noticia?=<?php echo $row4['id'] ?>">News</a>
 
                             <?php } ?>
 
-                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Promoções ativas</a>
+                             <a class="dropdown-item" href="<?php echo url ?>/promocoes">Active Promotions</a>
                               
                             </div>
                         </li>
@@ -969,8 +969,8 @@
     <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-5">
-            <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Registre-se</h3>
-            <h5 style="color: #a7a7a7;margin-bottom:30px">A poucos passos do paraíso...</h5>
+            <h3 style="color:#1e262c;font-weight: bold;margin-top:0px">Register</h3>
+            <h5 style="color: #a7a7a7;margin-bottom:30px">Just a few steps from paradise...</h5>
             <div class="card">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
@@ -986,15 +986,15 @@
                         ?>
                         <form method="post" id="" class="ng-pristine ng-valid">
                             <div class="form-group">
-                                <label>Nome de Usuário</label>
+                                <label>User Name</label>
                                 <input type="text" class="form-control" name="usuario_salsa" id="username" required="">
                             </div>
                             <div class="form-group">
-                                <label>Senha</label>
+                                <label>Password</label>
                                 <input type="password" name="senha_salsa" class="form-control" id="password" required="">
                             </div>
                             <div class="form-group">
-                                <label>Confirmar Senha</label>
+                                <label>Confirm Password</label>
                                 <input type="password" name="senha_repetir" class="form-control" required="">
                             </div>
                             <div class="form-group">
@@ -1009,9 +1009,9 @@
 
 
                                 <div class="form-group">
-                                <label>Digite o Captcha:</label> <?php echo $salgcpa ?>
+                                <label>Enter the Captcha:</label> <?php echo $salgcpa ?>
                                 <input hidden="" value="<?php echo $salgcpa ?>" type="text" class="form-control" name="captcha" id="captcha">
-                                <input placeholder="Digite o número acima aqui..." type="text" class="form-control" name="captcha_repetir" id="captcha_repetir" required="">
+                                <input placeholder="Enter the number above here..." type="text" class="form-control" name="captcha_repetir" id="captcha_repetir" required="">
                                 </div>
 
 
@@ -1020,7 +1020,7 @@
                             <?php } ?>
 
 
-                            <button type="submit" name="registrar"  class="btn btn-primary g-recaptcha" style="float: right">Criar meu avatar</button>
+                            <button type="submit" name="registrar"  class="btn btn-primary g-recaptcha" style="float: right">Create my avatar</button>
                         </form>
                     </li>
                 </ul>
@@ -1039,14 +1039,18 @@
 <br>
 <br>
 <br>
-    <div style="font-weight: 14px;background: #1e262c; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
-        <div class="container">
-
-            <span style="color:#a7a7a7">
-            © 2019 - <?php echo ano ?> Rede <?php echo nome ?> Corporation Ltd. Todos os direitos reservados.
-               </span>
+<div style="font-weight: 14px;background: #1e262c; color: #fff; padding: 10px;border-top: 4px solid #1b2228;margin-top: 30px">
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 10px">
+        <div>
+            <b><?php echo nome ?> Hotel 2022</b> powered by <b><a style="color: #fff; text-decoration: underline" href="https://github.com/retrokey/" target="_blank">SalsaCMS 2.0</a></b>
+        </div>
+        <div class="d-flex" style="gap: 10px; font-size: 12px">
+            <a style="color: #a7a7a7; text-decoration: underline" href="/privacidade">Privacy Policy</a>
+            <div style="color: #a7a7a7;">|</div>
+            <a style="color: #a7a7a7; text-decoration: underline" href="/termos">Terms and Conditions of Use</a>
         </div>
     </div>
+</div>
 
     <div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
         <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div>

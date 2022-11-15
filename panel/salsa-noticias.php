@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = "Notícias publicadas";
-    $desc = "Essa função permite você veja as notícias publicadas e também as edite.";
+    $titulo = "News Releases";
+    $desc = "This function allows you to view the published news and also edit them.";
     ?>
      <title><?php echo nome . ' - ' . $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -27,15 +27,17 @@
 <body>
     <?php
     if (rank == 5)
-        $salsarank = "Moderador";
+        $salsarank = "Moderator";
+    if (rank == 6)
+        $salsarank = "Game Master";
     if (rank == 7)
-        $salsarank = "Administrador";
+        $salsarank = "Administrator";
     if (rank == 8)
-        $salsarank = "Gerente";
+        $salsarank = "Manager";
     if (rank == 9)
         $salsarank = "CEO";
     if (rank == 10)
-        $salsarank = "Fundador";
+        $salsarank = "Founder";
     ?>
 <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
     <div class="app-header header-shadow">
@@ -442,10 +444,10 @@
   <thead>
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">Titulo</th>
-      <th scope="col">Autor</th>
-      <th scope="col">Promoção ativa</th>
-      <th scope="col">Ação</th>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Active promotion</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -462,7 +464,7 @@
       <td><?php echo $row['author'] ?></td>
       <td><?php echo $row['noticia_ativa'] ?></td>
 
-      <td><a href="salsa-editar-noticia?=<?php echo $row['id'] ?>"> Editar</a></td>
+      <td><a href="salsa-editar-noticia?=<?php echo $row['id'] ?>"> Edit</a></td>
     </tr>
 <?php } ?>
     

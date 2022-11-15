@@ -12,8 +12,8 @@ $sql = "SELECT * FROM cms_news WHERE id='".$noticiafinal."'";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <?php
-    $titulo = $row['title'] .  " - Editar notícia";
-    $desc = "Essa função permite você edite notícias que ficarão disponíveis na CMS.";
+    $titulo = $row['title'] .  " - Edit news";
+    $desc = "This function allows you to edit news items that will be available in the CMS.";
     ?>
      <title><?php echo $titulo ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -1589,19 +1589,19 @@ $sql = "SELECT * FROM cms_news WHERE id='".$noticiafinal."'";
          <?php SalsaPainel::editar_noticia($conn) ?>
                                 <form method="post">
 
-                                    <b><label>Titulo da notícia:</label></b>
+                                    <b><label>Title of the news:</label></b>
                                     <input value="<?php echo $row['title'] ?>" class="form-control" type="text" name="vlr2" required="">
 
-                                    <b><label>Descrição curta da notícia:</label></b>
+                                    <b><label>Short news description:</label></b>
                                     <input value="<?php echo $row['shortstory'] ?>" class="form-control" type="text" name="vlr3" required="">
 
                                    <input hidden="" type="text" name="id" value="<?php echo $row['id'] ?>">
 
                                     <?php $historia = $row['longstory']; ?>
 
-                                    <b><label>Imagem de capa (exemplo http://imgur.com/anujWm.png):</label></b>
+                                    <b><label>Cover image (example http://imgur.com/anujWm.png):</label></b>
                                     <input value="<?php echo $row['image'] ?>" class="form-control" type="text" name="vlr4" required="">
-                                    <b><label>Conteúdo da notícia:</label></b>
+                                    <b><label>News content:</label></b>
                                     <br>
                                         <textarea name="news"  rows="15" cols="80">
                                             <?php echo $historia ?>

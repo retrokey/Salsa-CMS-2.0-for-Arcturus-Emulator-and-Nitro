@@ -6,31 +6,31 @@
                             {
                                 ?>
                                    
-                                   <li class="app-sidebar__heading">Moderadores</li>
+                                   <li class="app-sidebar__heading">Moderators</li>
                                <li>
                                 <a href="salsa-conversas-de-quarto">
                                     <i class="metismenu-icon pe-7s-display1">
-                                    </i>Conversas de quarto
+                                    </i>Bedroom Conversations
                                 </a>
 
                                 <a href="salsa-banir-usuario">
                                     <i class="metismenu-icon pe-7s-close">
-                                    </i>Banir um usuário
+                                    </i>Ban a user
                                 </a>
 
                                 <a href="salsa-desbanir-usuario">
                                     <i class="metismenu-icon pe-7s-smile">
-                                    </i>Desbanir um usuário
+                                    </i>Unban a user
                                 </a>
 
                                 <a href="salsa-contas-fakes">
                                     <i class="metismenu-icon pe-7s-users">
-                                    </i>Contas fakes
+                                    </i>Fake accounts
                                 </a>
 
                                 <a href="salsa-premiar-usuario">
                                     <i class="metismenu-icon pe-7s-joy">
-                                    </i>Premiar usuário
+                                    </i>Reward user
                                 </a>
                             </li>
 
@@ -40,31 +40,31 @@
                             {
                                 ?>
 
-                            <li class="app-sidebar__heading">Administradores</li>
+                            <li class="app-sidebar__heading">Administrators</li>
                                <li>
                                 <a href="salsa-publicar-noticias">
                                     <i class="metismenu-icon pe-7s-note2">
-                                    </i>Publicar uma notícia
+                                    </i>Publish a news item
                                 </a>
                                 <a href="salsa-noticias">
                                     <i class="metismenu-icon pe-7s-print">
-                                    </i>Notícias publicadas
+                                    </i>Published news
                                 </a>
                                 <a href="salsa-dar-emblema-usuario">
                                     <i class="metismenu-icon pe-7s-photo">
-                                    </i> Dar emblema
+                                    </i> Give a Badge
                                 </a>
                                 <a href="salsa-remover-emblema-usuario">
                                     <i class="metismenu-icon pe-7s-safe">
-                                    </i> Remover emblema
+                                    </i> Remove a Badge
                                 </a>
                                 <a href="salsa-dar-pontos-de-promocao">
                                     <i class="metismenu-icon pe-7s-cup">
-                                    </i> Dar pontos de promoção
+                                    </i> Give promotion points
                                 </a>
                                 <a href="salsa-remover-promocao-ativa">
                                     <i class="metismenu-icon pe-7s-wallet">
-                                    </i> Remover promoção ativa
+                                    </i> Remove active promotion
                                 </a>
 
                              
@@ -81,11 +81,11 @@
                             {
                                 ?>
 
-                            <li class="app-sidebar__heading">Gerentes</li>
+                            <li class="app-sidebar__heading">Manager</li>
                                <li>
                                 <a href="salsa-dar-cargo">
                                     <i class="metismenu-icon pe-7s-add-user">
-                                    </i>Dar cargo
+                                    </i>Give a Rank
                                 </a>
                              
                                
